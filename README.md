@@ -1,6 +1,3 @@
-Certainly! Here's a sample portfolio description for a GitHub README:
-
----
 
 # Portfolio
 
