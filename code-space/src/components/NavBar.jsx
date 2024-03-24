@@ -11,13 +11,13 @@ export default function NavBar() {
         <img src={Logo} alt="Logo" className="w-14 h-14" /><span className="text-4xl text-white font-bold">codeSpace</span>
       </div>
       <div className="flex space-x-8 items-center">
-        <NavLink to="/" className="text-white">
+        <NavLink to="/" className="text-white font-semibold">
           Home
         </NavLink>
-        <NavLink to="/skills" className="text-white">
+        <NavLink to="/skills" className="text-white font-semibold">
           Skills
         </NavLink>
-        <NavLink to="/projects" className="text-white">
+        <NavLink to="/projects" className="text-white font-semibold">
           Projects
         </NavLink>
         <div className="flex space-x-2 items-center">
