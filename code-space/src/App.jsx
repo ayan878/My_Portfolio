@@ -1,8 +1,17 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom"
+import AppLayout from "./components/AppLayout"
+import Home from "./components/Home"
+
+const router=createBrowserRouter([{
+  element:<AppLayout/>,
+  children:[
+    {path:'/',
+    element:<Home/>},
+  ]
+}])
 function App() {
   return (
-    <div>
-      porto
-    </div>
+<RouterProvider router={router}/>
   )
 }
 
