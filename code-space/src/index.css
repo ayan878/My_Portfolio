@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .skill{
+  width: 160px;
+  height: 160px;
+  /* background:cornflowerblue; 
+  position: relative; */
+  .skills{
+    box-shadow:
+      6px 6px -1px rgba(0,0,0,0.15), -6px -6px 10px rgba(255,255,255,0.7);
+  }
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
