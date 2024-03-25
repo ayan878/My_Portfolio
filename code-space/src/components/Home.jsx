@@ -1,11 +1,12 @@
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import RightArrow from "../assets/img/right-arrow.svg";
 import Astronaut from "../assets/img/header-img.svg";
 function Home() {
   return (
-    <div className="grid grid-cols-2 h-screen">
+    <div className="grid grid-cols-2 h-screen mt-14">
       <div className="px-16">
         <h3 className="text-white font-custom  border w-fit px-2 bg-purple-900 mb-4">
           Welcome to my CodeSpace
@@ -34,10 +35,10 @@ function Home() {
           fugit neque tempora, exercitationem ipsa iure repellat sapiente nulla
           illum asperiores!
         </p>
-        <NavLink className=" text-white font-semibold flex space-x-1">
+        <Link className=" text-white font-semibold flex space-x-1">
           <span>Let's Connect</span>
           <img src={RightArrow} />
-        </NavLink>
+        </Link>
       </div>
       <div>
         <motion.img
