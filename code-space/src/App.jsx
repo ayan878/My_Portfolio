@@ -7,8 +7,9 @@ import Projects from "./components/Projects";
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
+    path:"/",
     children: [
-      { path: "/", element: <Home /> },
+      { path: "/Home", element: <Home /> },
       { path: "/skills", element: <Skills /> },
       { path: "/projects", element: <Projects /> },
     ],
@@ -20,4 +21,6 @@ function App() {
   )
 }
 
+
 export default App
+
