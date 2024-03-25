@@ -6,7 +6,7 @@ import RightArrow from "../assets/img/right-arrow.svg";
 import Astronaut from "../assets/img/header-img.svg";
 function Home() {
   return (
-    <div className="grid grid-cols-2 h-screen mt-14">
+    <div className="grid grid-cols-2 mt-14">
       <div className="px-16">
         <h3 className="text-white font-custom  border w-fit px-2 bg-purple-900 mb-4">
           Welcome to my CodeSpace
