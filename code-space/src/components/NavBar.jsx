@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link,NavLink} from "react-router-dom";
 import LinkedIn from "../assets/img/nav-icon1.svg";
 import Facebook from "../assets/img/nav-icon2.svg";
 import Twitter from "../assets/img/nav-icon3.svg";
@@ -6,12 +6,12 @@ import Logo from "../assets/img/codeSpace.png";
 
 export default function NavBar() {
   return (
-    <nav className="container flex justify-between items-center py-8 mx-auto mb-16">
+    <nav className="container flex justify-between items-center py-8 mx-auto ">
       <div className="flex space-x-4">
         <img src={Logo} alt="Logo" className="w-14 h-14" /><span className="text-4xl text-white font-bold">codeSpace</span>
       </div>
       <div className="flex space-x-8 items-center">
-        <NavLink to="/" className="text-white font-semibold">
+        <NavLink to="/home" className="text-white font-semibold">
           Home
         </NavLink>
         <NavLink to="/skills" className="text-white font-semibold">
