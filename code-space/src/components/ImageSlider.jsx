@@ -55,10 +55,10 @@ const ImageSlider = () => {
           {[...Array(Math.ceil(images.length / 3))].map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 rounded-full bg-white cursor-pointer ${
-                currentIndex >= index * 3 && currentIndex < (index + 1) * 3
+              className={`w-3 h-3 rounded-full ${
+                currentIndex === index * 3
                   ? "bg-purple-800"
-                  : ""
+                  : "bg-white cursor-pointer"
               }`}
               onClick={() => setCurrentIndex(index * 3)}
             ></div>
