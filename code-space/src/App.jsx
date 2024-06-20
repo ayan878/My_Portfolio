@@ -7,9 +7,10 @@ import Projects from "./components/Projects";
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
-    path:"/",
+    path: "/",
     children: [
-      { path: "/Home", element: <Home /> },
+      { path: "/", element: <Home /> },
+      { path: "/home", element: <Home /> },
       { path: "/skills", element: <Skills /> },
       { path: "/projects", element: <Projects /> },
     ],
