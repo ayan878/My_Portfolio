@@ -12,7 +12,7 @@ function Projects() {
   return (
     <div className=" shadow-custom border"
     >
-      AYAN
+      
     </div>
   );
 }
