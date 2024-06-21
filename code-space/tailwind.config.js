@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         "bg-Image": "url('./src/assets/img/banner-bg.png')",
+        "bg-skill": "url('./src/assets/img/skill-banner-bg.png')",
       },
       fontFamily: {
         custom: ["CenterNo2-Bold", "sans"], //
