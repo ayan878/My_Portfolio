@@ -1,6 +1,6 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import AppLayout from "./components/AppLayout"
-import Home from "./components/Home"
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import AppLayout from "./components/AppLayout";
+import Home from "./components/Home/Home";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import AboutMe from "./components/AboutMe";
@@ -14,16 +14,12 @@ const router = createBrowserRouter([
       { path: "/home", element: <Home /> },
       { path: "/skills", element: <Skills /> },
       { path: "/projects", element: <Projects /> },
-      { path: "/about", element: <AboutMe /> },
+      { path: "/", element: <AboutMe /> },
     ],
   },
 ]);
 function App() {
-  return (
-<RouterProvider router={router}/>
-  )
+  return <RouterProvider router={router} />;
 }
 
-
-export default App
-
+export default App;
