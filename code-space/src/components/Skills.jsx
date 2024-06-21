@@ -1,7 +1,7 @@
-import GreaterThan from "../assets/img/arrow2.svg";
-import LessThan from "../assets/img/arrow1.svg";
-import nintyFive from "../assets/img/meter1.svg";
-import ImageSlider from "./ImageSlider";
+// import GreaterThan from "../assets/img/arrow2.svg";
+// import LessThan from "../assets/img/arrow1.svg";
+// import nintyFive from "../assets/img/meter1.svg";
+// import ImageSlider from "./ImageSlider";
 import SkillsImg from "../assets/img/Skills.png"
 function Skills() {
   return (
