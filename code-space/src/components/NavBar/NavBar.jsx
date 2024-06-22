@@ -19,8 +19,8 @@ import NavBarDesktop from "./NavBarDesktop";
 
 function NavBar() {
   return (
-    <div><div className='md:hidden'><MobileNavbar/></div><div className='hidden md:block'><NavBarDesktop/>
-      </div></div>
+    <><MobileNavbar/><NavBarDesktop/>
+      </>
   )
 }
 
