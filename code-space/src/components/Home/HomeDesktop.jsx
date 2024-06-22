@@ -13,7 +13,7 @@ function HomeDesktop() {
           Welcome to my CodeSpace
         </h3>
         <TypeAnimation
-          className="text-white text-4xl font-bold mb-10"
+          className="text-purple-400 text-4xl font-bold mb-10"
           sequence={[
             "I'm Ayan Raza",
             1000,

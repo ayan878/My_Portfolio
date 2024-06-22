@@ -79,3 +79,17 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+.active-link {
+  /* background: radial-gradient(circle at center, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)); */
+  border-radius: 50%;
+  box-shadow: 0 6px 8px 2px rgba(0, 0, 0, 0.8);
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  padding: 8px;
+  /* border: 2px solid white; */
+}
+
+.active-link .text-2xl {
+  color: #2a0651;
+}
