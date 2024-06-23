@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import RightArrow from "@assets/img/right-arrow.svg";
@@ -33,10 +33,10 @@ function HomeMobile() {
         been creating web applications for over 7 years, I still love it as if
         it was something new.
       </p>
-      <Link className="flex items-center text-white font-semibold">
+      <a className="flex items-center text-white font-semibold">
         <span>Let's Connect</span>
         <img src={RightArrow} alt="Right Arrow" className="ml-2" />
-      </Link>
+      </a>
       <div className="mt-10 flex justify-center">
         <motion.img
           src={Astronaut}

@@ -7,6 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@assets": path.resolve(__dirname, "src/assets"),
+      "@ui": path.resolve(__dirname, "src/components/ui"),
     },
   },
   optimizeDeps: {

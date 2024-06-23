@@ -1,3 +1,66 @@
+// import React from "react";
+// import { Link as ScrollLink } from "react-scroll";
+// import { FaHome, FaUser, FaBriefcase, FaEnvelope } from "react-icons/fa";
+
+// const Navbar = () => {
+//   return (
+//     <nav className="navbar">
+//       <ul>
+//         <li>
+//           <ScrollLink
+//             activeClass="active"
+//             to="home"
+//             spy={true}
+//             smooth={true}
+//             offset={-70}
+//             duration={500}
+//           >
+//             <FaHome /> Home
+//           </ScrollLink>
+//         </li>
+//         <li>
+//           <ScrollLink
+//             activeClass="active"
+//             to="about"
+//             spy={true}
+//             smooth={true}
+//             offset={-70}
+//             duration={500}
+//           >
+//             <FaUser /> About
+//           </ScrollLink>
+//         </li>
+//         <li>
+//           <ScrollLink
+//             activeClass="active"
+//             to="services"
+//             spy={true}
+//             smooth={true}
+//             offset={-70}
+//             duration={500}
+//           >
+//             <FaBriefcase /> Services
+//           </ScrollLink>
+//         </li>
+//         <li>
+//           <ScrollLink
+//             activeClass="active"
+//             to="contact"
+//             spy={true}
+//             smooth={true}
+//             offset={-70}
+//             duration={500}
+//           >
+//             <FaEnvelope /> Contact
+//           </ScrollLink>
+//         </li>
+//       </ul>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
 // // src/components/NavBar/NavBarDesktop.js
 // import { Link } from "react-router-dom";
 // import LinkedIn from "@assets/img/nav-icon1.svg";
@@ -69,10 +132,11 @@
 
 
 import { Link as ScrollLink } from "react-scroll";
-import LinkedIn from "@assets/img/nav-icon1.svg";
-import Facebook from "@assets/img/nav-icon2.svg";
-import Twitter from "@assets/img/nav-icon3.svg";
-import Logo from "@assets/img/codeSpace.png";
+import LinkedIn from "./assets/img/nav-icon1.svg";
+import Facebook from "./assets/img/nav-icon2.svg";
+import Twitter from "./assets/img/nav-icon3.svg";
+import Logo from "./assets/img/codeSpace.png";
+
 
 const NavBarDesktop = () => {
   return (

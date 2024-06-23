@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import RightArrow from "@assets/img/right-arrow.svg";
@@ -10,7 +10,7 @@ const textContent =
 
 function HomeDesktop() {
   return (
-    <div className="grid grid-cols-2 mt-14">
+    <div className="grid grid-cols-2 mt-14" id="home">
       <div className="pl-16">
         <h3 className="text-white font-custom border w-fit px-2 bg-purple-900 mb-4">
           Welcome to my CodeSpace
@@ -36,13 +36,12 @@ function HomeDesktop() {
           text={textContent}
           revealText={textContent}
         />
-        <Link
-          to="/contact"
+        <a
           className="text-white font-semibold flex items-center mt-4"
         >
           <span>Let's Connect</span>
           <img src={RightArrow} alt="Right Arrow" className="ml-2" />
-        </Link>
+        </a>
       </div>
       <div>
         <motion.img

@@ -1,7 +1,7 @@
 
 function AboutMe() {
   return (
-    <div>
+    <div id="about">
       <h1>
         Hello, i’m Elias! I’m a self-taught front-end developer based in Kyiv,
         Ukraine. I can develop responsive websites from scratch and raise them

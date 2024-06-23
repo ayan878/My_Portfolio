@@ -1,5 +1,5 @@
 {
-  "name": "my-project",
+  "name": "scrollapp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
+    "react-scroll": "^1.9.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

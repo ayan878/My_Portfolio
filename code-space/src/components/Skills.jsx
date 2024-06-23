@@ -2,10 +2,11 @@
 // import LessThan from "../assets/img/arrow1.svg";
 // import nintyFive from "../assets/img/meter1.svg";
 // import ImageSlider from "./ImageSlider";
+
 import SkillsImg from "../assets/img/Skills.png"
 function Skills() {
   return (
-    <div
+    <div id="skills"
       // className=" bg-black bg-opacity-80 mx-28 rounded-3xl py-4 "
       className="flex flex-col items-center justify-center"
       style={{

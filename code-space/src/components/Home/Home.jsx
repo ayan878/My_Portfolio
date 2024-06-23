@@ -7,7 +7,7 @@ function Home() {
     query: "(min-width: 1174px)",
   });
 console.log(`Is desktop or laptop: ${isDesktopOrLaptop}`); 
-  return isDesktopOrLaptop ? <HomeDesktop /> : <HomeMobile />;
+  return <div id="home">{isDesktopOrLaptop ? <HomeDesktop /> : <HomeMobile /> }</div>;
 }
 
 export default Home;
