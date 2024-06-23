@@ -1,9 +1,9 @@
 // import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import RightArrow from "@assets/img/right-arrow.svg";
-import Astronaut from "@assets/img/header-img.svg";
-import { TextRevealCard } from "../ui/TextRevealCard.jsx";
+import RightArrow from "./assets/img/right-arrow.svg";
+import Astronaut from "./assets/img/header-img.svg";
+// import { TextRevealCard } from "../ui/TextRevealCard.jsx";
 
 const textContent =
   "I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 7 years, I still love it as if it was something new.";
@@ -32,7 +32,7 @@ function HomeDesktop() {
           style={{ fontSize: "2em", display: "inline-block" }}
           repeat={Infinity}
         />
-        <TextRevealCard text={textContent} revealText={textContent} />
+        {/* <TextRevealCard text={textContent} revealText={textContent} /> */}
         <a className="text-white font-semibold flex items-center mt-4">
           <span>Let's Connect</span>
           <img src={RightArrow} alt="Right Arrow" className="ml-2" />
