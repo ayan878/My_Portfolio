@@ -6,13 +6,16 @@ import Contact from "./Contact";
 import MobileNavbar from "./MobileNavbar";
 import HomeDesktop from "./Home";
 
+
 function App() {
   return (
-    <div className="App">
+    <div className="bg-[url('./src/assets/img/banner-bg.png')] h-screen bg-cover bg-center">
       <div className="hidden md:block">
-      <Navbar />
+        <Navbar />
       </div>
-      <div className="md:hidden"><MobileNavbar/></div>
+      <div className="md:hidden">
+        <MobileNavbar />
+      </div>
       <HomeDesktop />
       <About />
       <Services />
