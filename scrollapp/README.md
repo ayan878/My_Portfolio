@@ -51,3 +51,11 @@ Happy coding!
   - Initializes Tailwind CSS configuration using `npx tailwindcss init -p`.
 - **Usage**: Briefly mentions starting development by utilizing Tailwind CSS classes for styling.
 
+### install react scroll for scrolling on single page
+
+```bash
+npx i react-scroll
+```
+install react-router-dom
+install react-type-animation
+install framer motion
