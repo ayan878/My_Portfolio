@@ -1,9 +1,12 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import RightArrow from "../assets/img/right-arrow.svg";
 import Astronaut from "../assets/img/header-img.svg";
-import TextMotion from "../components/TextMotion";
+// import TextMotion from "../components/TextMotion";
 import DesktopNavbar from "../components/DesktopNavbar";
+import Button from "../components/ui/Button";
+import Border from "@/components/ui/Border";
+import '.././index.css'
+import { BubbleText } from "@/components/ui/BubbleText";
 
 function HomeDesktop() {
   return (
@@ -11,11 +14,14 @@ function HomeDesktop() {
       <DesktopNavbar />
       <div className="grid grid-cols-2 mt-10">
         <div className="pl-16">
-          <h3 className="text-white font-custom border w-fit px-2 bg-purple-900 mb-4">
+          {/* <h3 className="text-white font-custom border w-fit px-2 bg-purple-900 mb-4">
             Welcome to my CodeSpace
-          </h3>
+          </h3> */}
+          <Border
+            title={"Welcome to my CodeSpace"}
+          />
           <TypeAnimation
-            className="text-purple-400 text-4xl font-bold mb-2"
+            className="text-purple-400 text-4xl font-bold mb-2 mt-4"
             sequence={[
               "I'm Ayan Raza",
               1000,
@@ -31,11 +37,14 @@ function HomeDesktop() {
             style={{ fontSize: "2em", display: "inline-block" }}
             repeat={Infinity}
           />
-          <TextMotion />
-          <a className="text-white font-semibold flex items-center mt-4">
+          {/* <TextMotion className="mb-6" /> */}
+          <BubbleText/>
+          {/* <a className="text-white font-semibold flex items-center mt-4">
             <span>Let's Connect</span>
             <img src={RightArrow} alt="Right Arrow" className="ml-2" />
-          </a>
+          </a> */}
+
+          <Button />
         </div>
         <div>
           <motion.img

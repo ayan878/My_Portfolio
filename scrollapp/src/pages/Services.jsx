@@ -1,4 +1,4 @@
-import { AnimatedTooltip } from "@/components/ui/animated-toolkit";
+// import { AnimatedTooltip } from "@/components/ui/animated-toolkit";
 // import React from "react";
   import {
     FaFigma,
@@ -79,7 +79,7 @@ const Services = () => {
     >
       <h2>Services Section</h2>
       <p>Welcome to the Home section!</p>
-      <AnimatedTooltip items={items}/>
+      {/* <AnimatedTooltip items={items}/> */}
     </section>
   );
 };

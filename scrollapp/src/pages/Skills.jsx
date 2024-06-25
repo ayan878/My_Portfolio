@@ -5,11 +5,14 @@ import { TbBrandRedux} from "react-icons/tb";
 import { SiReactquery } from "react-icons/si";
 
 import {  FaCss3Alt, FaFigma, FaJs, FaNode, FaReact } from "react-icons/fa";
+import Border from "@/components/ui/Border";
+import Card from "@/components/ui/Card";
+
 
 function Skills() {
   return (
     <>
-      <div  
+      <div
         id="skills"
         className="flex flex-col items-center justify-center bg-black"
         style={{
@@ -138,6 +141,8 @@ function Skills() {
           </HoverCard>
         </div>
         <img src={SkillsImg} alt="skills" />
+        <Border/>
+        <Card/>
       </div>
     </>
   );
