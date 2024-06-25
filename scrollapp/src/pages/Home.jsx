@@ -2,14 +2,13 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import RightArrow from "../assets/img/right-arrow.svg";
 import Astronaut from "../assets/img/header-img.svg";
-import TextMotion, { MemoizedStars } from "../components/TextMotion";
+import TextMotion from "../components/TextMotion";
 import DesktopNavbar from "../components/DesktopNavbar";
 
 function HomeDesktop() {
   return (
     <div id="home" className="h-screen ">
-      <MemoizedStars/>
-      <DesktopNavbar/>
+      <DesktopNavbar />
       <div className="grid grid-cols-2 mt-10">
         <div className="pl-16">
           <h3 className="text-white font-custom border w-fit px-2 bg-purple-900 mb-4">
