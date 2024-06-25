@@ -7,7 +7,7 @@ const Example = () => {
   );
 };
 
-export const BubbleText = () => {
+export const BubbleText = ({className}) => {
   const text = `I've spent the last 5 years building and scaling software for some pretty cool companies. I also teach people to paint online (in case you've got an empty canvas layin' around 🎨). Let's connect!`;
 
   //   const hoverTextStyle = {
@@ -21,7 +21,7 @@ export const BubbleText = () => {
 
 
   return (
-    <h2 className="text-left text-2xl font-thin text-indigo-300">
+    <h2 className={`text-left text-2xl font-thin text-indigo-300 ${className}`}>
       {text.split("").map((child, idx) => (
         <span className={styles.hoverText} key={idx}>
           {child}
