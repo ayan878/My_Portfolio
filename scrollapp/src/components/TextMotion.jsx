@@ -3,19 +3,17 @@ import { motion } from "framer-motion";
 import "./TextMotion.css";
 import { memo } from "react";
 
-function TextMotion() {
+function TextMotion({className}) {
   return (
     <motion.h1
-      className="glitter-text"
-      initial={{ x:0 }}
+      className={`glitter-text ${className}`}
+      initial={{ x: 0 }}
       animate={{ x: 0 }}
       transition={{ duration: 2, delay: 1 }}
     >
-      I'm a full stack developer (React.js & Node.js) with a focus on creating
-      (and occasionally designing) exceptional digital experiences that are
-      fast, accessible, visually appealing, and responsive. Even though I have
-      been creating web applications for over 7 years, I still love it as if it
-      was something new.
+      I've spent the last 5 years building and scaling software for some pretty
+      cool companies. I also teach people to paint online (incase you've got an
+      empty canvas layin' around 🎨). Let's connect!
     </motion.h1>
   );
 }
