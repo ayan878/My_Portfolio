@@ -5,12 +5,31 @@ const AboutMe = () => {
   return (
     <div className="radial-gradient(125% 125% at 50% 0%, #020617 50%,to-bg-purple-700 lg:flex lg:items-center p-6 md:p-12 lg:justify-between">
       <div className="relative lg:flex lg:flex-row lg:items-center">
-        <div className="relative lg:w-1/2">
-          <img
-            src={myPic}
-            alt="Ayan Raza"
-            className="top-4 rounded-tl-[96px] rounded-br-[96px] w-3/4 h-3/4 mx-auto lg:mx-0 lg:mr-6"
-          />
+        <div
+          className="relative h-96 w-72 lg:w-2/5 bg-black rounded-xl"
+          style={{
+            transformStyle: "preserve-3d",
+            transform: "rotateY(25deg)",
+          }}
+        >
+          <div
+            style={{
+              transform: "translateZ(16px) translateY(-8px)",
+              transformStyle: "preserve-3d",
+            }}
+            className="absolute inset-2 grid  rounded-xl shadow-lg  border-2 border-black"
+          >
+            {/* <img
+              src={myPic}
+              alt="Ayan Raza"
+              className="top-4 rounded-tl-[96px] rounded-br-[96px] w-3/4 h-3/4 mx-auto lg:mx-0 lg:mr-6"
+            /> */}
+            <img
+              src={myPic}
+              alt="Ayan Raza"
+              className="absolute rounded-xl w-full h-full mx-auto lg:mx-0 lg:mr-6"
+            />
+          </div>
         </div>
         <div className="lg:w-1/2 text-center lg:text-left mt-6 lg:mt-0">
           <h2 className="text-2xl font-bold text-gray-800">About Me</h2>
