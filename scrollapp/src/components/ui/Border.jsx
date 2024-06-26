@@ -17,7 +17,8 @@ function Border({title,className}) {
      }, []);
 
   return (
-    <motion.div  style={{
+    <motion.div  
+    style={{
         border,
         boxShadow,
       }}
