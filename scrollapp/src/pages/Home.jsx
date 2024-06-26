@@ -1,27 +1,20 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Astronaut from "../assets/img/header-img.svg";
-// import TextMotion from "../components/TextMotion";
-import DesktopNavbar from "../components/DesktopNavbar";
 import Button from "../components/ui/Button";
-import Border from "@/components/ui/Border";
-import '.././index.css'
-import { BubbleText } from "@/components/ui/BubbleText";
+import Border from "../components/ui/Border";
+import { BubbleText } from "../components/ui/BubbleText";
+import Navbar from "../components/Navbar";
 
-function HomeDesktop() {
+function Home() {
   return (
-    <div id="home" className="h-screen ">
-      <DesktopNavbar />
-      <div className="grid grid-cols-2 mt-10">
-        <div className="pl-16">
-          {/* <h3 className="text-white font-custom border w-fit px-2 bg-purple-900 mb-4">
-            Welcome to my CodeSpace
-          </h3> */}
-          <Border
-            title={"Welcome to my CodeSpace"}
-          />
+    <div id="home" className="h-screen">
+      <Navbar />
+      <div className="grid grid-cols-1 md:grid-cols-2 md:mt-10 px-12 md:px-0">
+        <div className="p-8 md:pl-16 md:pr-8">
+          <Border title={"Welcome to my CodeSpace"} />
           <TypeAnimation
-            className="text-purple-400 text-4xl font-bold mb-2 mt-4"
+            className="text-purple-400 text-4xl font-bold mb-2 mt-6"
             sequence={[
               "I'm Ayan Raza",
               1000,
@@ -37,18 +30,12 @@ function HomeDesktop() {
             style={{ fontSize: "2em", display: "inline-block" }}
             repeat={Infinity}
           />
-          {/* <TextMotion className="mb-6" /> */}
-          <BubbleText/>
-          {/* <a className="text-white font-semibold flex items-center mt-4">
-            <span>Let's Connect</span>
-            <img src={RightArrow} alt="Right Arrow" className="ml-2" />
-          </a> */}
-
-          <Button />
+          <BubbleText className="mb-4 md:mb-8 mt-2" />
+          <Button title="Let's connect" />
         </div>
-        <div>
+        <div className="flex justify-center items-center">
           <motion.img
-            className="ml-16 w-96"
+            className="w-3/4 max-w-md md:max-w-none"
             src={Astronaut}
             alt="My Animated Image"
             animate={{
@@ -73,4 +60,4 @@ function HomeDesktop() {
   );
 }
 
-export default HomeDesktop;
+export default Home;

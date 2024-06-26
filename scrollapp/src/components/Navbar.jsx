@@ -1,18 +1,18 @@
 import { Link as ScrollLink } from "react-scroll";
-import LinkedIn from "../assets/img/nav-icon1.svg";
-import Facebook from "../assets/img/nav-icon2.svg";
-import Twitter from "../assets/img/nav-icon3.svg";
 import Logo from "../assets/img/codeSpace.png";
+import { FaGithub, FaHackerrank } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { Linkedin } from "lucide-react";
 
-
-const DesktopNavbar = () => {
+const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center p-4 bg-[#1d1840] bg-opacity-80">
+    <nav className="flex justify-between items-center p-4 bg-[#1d1840] bg-opacity-80 px-12">
       <div className="flex items-center">
-        <img src={Logo} alt="Logo" className="w-14 h-14 ml-10" />
-        <span className="text-2xl text-white ml-2">codeSpace</span>
+        <img src={Logo} alt="Logo" className="w-14 h-14" />
+        <span className="text-2xl text-white font-bold">codeSpace</span>
       </div>
-      <div className="flex items-center">
+      <div className="hidden md:flex justify-between items-center">
+        {/* Desktop menu items */}
         <ScrollLink
           to="home"
           smooth={true}
@@ -53,26 +53,33 @@ const DesktopNavbar = () => {
         >
           Services
         </ScrollLink>
-        <div className="flex ml-4">
-          <a href="https://www.linkedin.com/login">
-            <img src={LinkedIn} alt="LinkedIn" className="w-8 h-8 mx-2" />
-          </a>
-          <a href="https://www.facebook.com">
-            <img src={Facebook} alt="Facebook" className="w-8 h-8 mx-2" />
-          </a>
-          <a href="https://www.twitter.com">
-            <img src={Twitter} alt="Twitter" className="w-8 h-8 mx-2" />
-          </a>
-        </div>
+      </div>
+
+      <div className="flex justify-between items-center">
+        {/* Social icons */}
         <a
-          href="#"
-          className="ml-4 p-2 border border-white text-white no-underline"
+          href="https://github.com/ayan878"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Let's Connect
+          <FaGithub className="w-8 h-8 mx-2 text-white" />
+        </a>
+        <a
+          href="https://www.linkedin.com/login"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Linkedin className="w-8 h-8 mx-2 text-blue-400" />
+        </a>
+        <a href="#">
+          <SiLeetcode className="w-8 h-8 mx-2 text-yellow-400" />
+        </a>
+        <a href="https://www.twitter.com">
+          <FaHackerrank className="w-8 h-8 mx-2 text-green-400" />
         </a>
       </div>
     </nav>
   );
 };
 
-export default DesktopNavbar;
+export default Navbar;

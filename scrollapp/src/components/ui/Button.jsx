@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { FiArrowRight } from 'react-icons/fi';
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
-function Button() {
+function Button({title,className}) {
 
   const color = useMotionValue(COLORS_TOP[0]);
 
@@ -30,9 +30,9 @@ function Button() {
       whileTap={{
         scale: 0.985,
       }}
-      className="group relative flex w-fit items-center gap-1.5  bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
+      className={`group relative flex w-fit items-center gap-1.5  bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50 ${className}`}
     >
-      Let's connect
+      {title}
       <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
     </motion.button>
   );

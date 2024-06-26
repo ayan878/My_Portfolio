@@ -1,6 +1,7 @@
-@tailwind base;
+ @tailwind base;
   @tailwind components;
   @tailwind utilities;
+
 
   @layer base {
     :root {
@@ -75,7 +76,9 @@
     }
   }
 
-  
+  body{
+    background-color: #2a0651;
+  }
 .active-link {
   /* background: radial-gradient(circle at center, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)); */
   border-radius: 50%;

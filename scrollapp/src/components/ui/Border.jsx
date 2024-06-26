@@ -2,7 +2,7 @@ import { useMotionTemplate, useMotionValue ,motion, animate} from 'framer-motion
 import { useEffect } from 'react'
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
-function Border({title}) {
+function Border({title,className}) {
 
     const color = useMotionValue(COLORS_TOP[0]);
     const border = useMotionTemplate`1px solid ${color}`;
@@ -27,7 +27,7 @@ function Border({title}) {
       whileTap={{
         scale: 0.985,
       }}
-      className="group relative flex w-fit items-center gap-1.5  bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
+      className={`group relative flex w-fit items-center gap-1.5  bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50 ${className}`}
     >{title}</motion.div>
   )
 }

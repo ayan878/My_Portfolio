@@ -92,11 +92,30 @@ import { SiExpress, SiMongodb, SiMysql, SiNextdotjs, SiReactquery } from "react-
 import { FaCss3Alt, FaFigma, FaJava, FaJs, FaNode, FaReact } from "react-icons/fa";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 import { FiFramer } from "react-icons/fi";
+import { useEffect } from "react";
+import {
+  useMotionTemplate,
+  useMotionValue,
+  animate,
+} from "framer-motion";
+
+const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
 function Skills() {
   // Define array of skills with icon and description
 
-  
+  const color = useMotionValue(COLORS_TOP[0]);
+
+  useEffect(() => {
+    animate(color, COLORS_TOP, {
+      ease: "easeInOut",
+      duration: 10,
+      repeat: Infinity,
+      repeatType: "mirror",
+    });
+  }, []);
+
+  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
   const skills = [
     {
       icon: <FaFigma className="text-3xl text-orange-600" />,
@@ -186,7 +205,7 @@ function Skills() {
 
 
   return (
-    <>
+    <motion.section className="grid min-h-screen place-content-center overflow-hidden bg-gray-950 px-4 py-24 text-gray-200" style={backgroundImage}>
       <div
         id="skills"
         className="flex flex-col items-center justify-center bg-black"
@@ -247,7 +266,7 @@ function Skills() {
         </div>
         {/* <img src={SkillsImg} alt="skills" /> */}
       </div>
-    </>
+    </motion.section>
   );
 }
 
