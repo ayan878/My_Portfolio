@@ -3,24 +3,28 @@ import Logo from "../assets/codeSpace.png";
 import { FaGithub, FaHackerrank } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { Linkedin } from "lucide-react";
+import HoverLink from "./ui/navbar-hover";
+
 
 const Navbar = () => {
   return (
     <nav className="flex justify-between items-center p-4 bg-[#1d1840] bg-opacity-80 px-12">
       <div className="flex items-center">
         <img src={Logo} alt="Logo" className="w-14 h-14" />
-        <span className="text-2xl text-white font-bold">codeSpace</span>
+        <span className="text-2xl text-white font-bold font-paytone">
+          codeSpace
+        </span>
       </div>
       <div className="hidden md:flex justify-between items-center">
         {/* Desktop menu items */}
-        <ScrollLink
+        {/* <ScrollLink
           to="home"
           smooth={true}
           duration={500}
           className="mx-4 text-white font-semibold cursor-pointer"
         >
-          Home
-        </ScrollLink>
+       
+       </ScrollLink>
         <ScrollLink
           to="skills"
           smooth={true}
@@ -52,7 +56,11 @@ const Navbar = () => {
           className="mx-4 text-white font-semibold cursor-pointer"
         >
           Services
-        </ScrollLink>
+        </ScrollLink> */}
+        <HoverLink name="Home" />
+        <HoverLink name="Skills" /> 
+        <HoverLink name="Projects" />
+        <HoverLink name="About" />
       </div>
 
       <div className="flex justify-between items-center">
