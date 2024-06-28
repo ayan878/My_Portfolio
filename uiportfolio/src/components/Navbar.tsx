@@ -3,7 +3,7 @@ import Logo from "../assets/codeSpace.png";
 import { FaGithub, FaHackerrank } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { Linkedin } from "lucide-react";
-import HoverLink from "./ui/navbar-hover";
+import HoverLink from "./ui/navbar-flip";
 
 
 const Navbar = () => {
