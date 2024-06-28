@@ -1,12 +1,10 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import Astronaut from "../assets/header-img.svg"
-
+import Astronaut from "../assets/header-img.svg";
 import Navbar from "../components/Navbar";
-
 import { BubbleText } from "../components/ui/BubbleText";
-
-import NeuButton from "../components/ui/BoxShadowButton";
+import NeuButton from "../components/ui/BoxShadowLink";
+import NeuLink from "../components/ui/BoxShadowLink";
 
 function Home() {
   return (
@@ -14,9 +12,11 @@ function Home() {
       <Navbar />
       <div className="grid grid-cols-1 md:grid-cols-2 md:mt-10 px-12 md:px-0">
         <div className="p-8 md:pl-16 md:pr-8">
-          <h1 className="text-5xl font-extrabold font-paytone">WELCOME, to my CodeSpace</h1>
+          <h1 className="text-5xl font-extrabold font-paytone">
+            WELCOME, to my CodeSpace
+          </h1>
 
-           <TypeAnimation
+          <TypeAnimation
             className="text-blue-400 text-4xl font-bold font-outfit mb-2 mt-6"
             sequence={[
               "I'm Ayan Raza",
@@ -32,10 +32,9 @@ function Home() {
             speed={50}
             style={{ fontSize: "2em", display: "inline-block" }}
             repeat={Infinity}
-          /> 
+          />
           <BubbleText className="font-paytone mb-4 md:mb-8 mt-2" />
-          <NeuButton />
-          {/* <Button title="Let's connect" /> */}
+          <NeuLink name="Hire Me" icon="" />
         </div>
         <div className="flex justify-center items-center">
           <motion.img
