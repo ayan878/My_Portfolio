@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import Astronaut from "../assets/header-img.svg"
 
 import Navbar from "../components/Navbar";
-import Border from "../components/ui/Border";
+
 import { BubbleText } from "../components/ui/BubbleText";
-import BoxShadow from "../components/ui/BoxShadow";
+
 import NeuButton from "../components/ui/BoxShadowButton";
 
 function Home() {
@@ -14,10 +14,10 @@ function Home() {
       <Navbar />
       <div className="grid grid-cols-1 md:grid-cols-2 md:mt-10 px-12 md:px-0">
         <div className="p-8 md:pl-16 md:pr-8">
-          {/* <Border title={"Welcome to my CodeSpace"} /> */}
-          <BoxShadow/>
-          <TypeAnimation
-            className="text-blue-400 text-4xl font-bold mb-2 mt-6"
+          <h1 className="text-5xl font-extrabold font-paytone">WELCOME, to my CodeSpace</h1>
+
+           <TypeAnimation
+            className="text-blue-400 text-4xl font-bold font-outfit mb-2 mt-6"
             sequence={[
               "I'm Ayan Raza",
               1000,
@@ -32,9 +32,9 @@ function Home() {
             speed={50}
             style={{ fontSize: "2em", display: "inline-block" }}
             repeat={Infinity}
-          />
-          <BubbleText className="mb-4 md:mb-8 mt-2" />
-          <NeuButton/>
+          /> 
+          <BubbleText className="font-paytone mb-4 md:mb-8 mt-2" />
+          <NeuButton />
           {/* <Button title="Let's connect" /> */}
         </div>
         <div className="flex justify-center items-center">
