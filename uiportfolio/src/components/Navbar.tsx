@@ -1,14 +1,17 @@
-import { Link as ScrollLink } from "react-scroll";
+
 import Logo from "../assets/codeSpace.png";
 import { FaGithub, FaHackerrank } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { Linkedin } from "lucide-react";
 import HoverLink from "./ui/navbar-flip";
+import { useAnimatedBackgroundColor } from "./utils/backgroundUtils";
+import {motion} from "framer-motion"
 
 
 const Navbar = () => {
+  const {backgroundColor}=useAnimatedBackgroundColor();
   return (
-    <nav className="flex justify-between items-center p-4 bg-[#1d1840] bg-opacity-80 px-12">
+    <motion.nav style={{backgroundColor}} className="flex justify-between items-center p-4 bg-[#1d1840] bg-opacity-80 px-12">
       <div className="flex items-center">
         <img src={Logo} alt="Logo" className="w-14 h-14" />
         <span className="text-2xl text-white font-bold font-paytone">
@@ -17,46 +20,6 @@ const Navbar = () => {
       </div>
       <div className="hidden md:flex justify-between items-center">
         {/* Desktop menu items */}
-        {/* <ScrollLink
-          to="home"
-          smooth={true}
-          duration={500}
-          className="mx-4 text-white font-semibold cursor-pointer"
-        >
-       
-       </ScrollLink>
-        <ScrollLink
-          to="skills"
-          smooth={true}
-          duration={500}
-          className="mx-4 text-white font-semibold cursor-pointer"
-        >
-          Skills
-        </ScrollLink>
-        <ScrollLink
-          to="projects"
-          smooth={true}
-          duration={500}
-          className="mx-4 text-white font-semibold cursor-pointer"
-        >
-          Projects
-        </ScrollLink>
-        <ScrollLink
-          to="about"
-          smooth={true}
-          duration={500}
-          className="mx-4 text-white font-semibold cursor-pointer"
-        >
-          About Me
-        </ScrollLink>
-        <ScrollLink
-          to="services"
-          smooth={true}
-          duration={500}
-          className="mx-4 text-white font-semibold cursor-pointer"
-        >
-          Services
-        </ScrollLink> */}
         <HoverLink name="Home" />
         <HoverLink name="Skills" /> 
         <HoverLink name="Projects" />
@@ -86,7 +49,7 @@ const Navbar = () => {
           <FaHackerrank className="w-8 h-8 mx-2 text-green-400" />
         </a>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
