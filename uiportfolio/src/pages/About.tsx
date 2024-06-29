@@ -1,3 +1,4 @@
+import React from "react";
 import myPic from "../assets/ayan.jpg";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 import { useAnimatedBackgroundColor } from "../components/utils/backgroundUtils";
@@ -9,10 +10,13 @@ const AboutMe = () => {
   const { backgroundColor } = useAnimatedBackgroundColor();
 
   return (
-    <div className="bg-white lg:flex lg:items-center p-6 md:p-12 lg:justify-between mx-4">
-      <div className="relative lg:flex lg:flex-row lg:items-center">
+    <div
+      id="about"
+      className="bg-white lg:flex lg:flex-col lg:items-center p-6 md:p-12 lg:justify-between mx-4"
+    >
+      <div className="relative lg:flex lg:flex-row flex flex-col items-center justify-center md:justify-start">
         <motion.div
-          className="relative h-96 w-72 lg:w-5/5 rounded-xl border-2 border-black md:mr-14"
+          className="relative h-96 w-72 lg:w-5/5 rounded-xl border-2 shadow-[3px_3px_0_black] border-black md:mr-14"
           style={{
             rotate,
             backgroundColor,
@@ -26,7 +30,7 @@ const AboutMe = () => {
               backgroundColor,
               transformStyle: "preserve-3d",
             }}
-            className="absolute inset-0 grid rounded-xl shadow-lg border-2 border-black"
+            className="absolute inset-0 grid rounded-xl border-2 border-black shadow-[3px_3px_0_black]"
           >
             <motion.div
               style={{
@@ -34,17 +38,17 @@ const AboutMe = () => {
                 backgroundColor,
                 transformStyle: "preserve-3d",
               }}
-              className="absolute inset-2 grid rounded-xl shadow-lg border-2 border-black"
+              className="absolute inset-2 grid rounded-xl shadow-[3px_3px_0_black] border-2 border-black"
             >
               <img
                 src={myPic}
                 alt="Ayan Raza"
-                className="absolute rounded-xl w-full h-full mx-auto lg:mx-0"
+                className="absolute rounded-xl w-full h-full mx-auto lg:mx-0 inset-0"
               />
             </motion.div>
           </motion.div>
         </motion.div>
-        <div className="lg:w-1/2 text-center lg:text-left mt-6 lg:mt-0 content-center ">
+        <div className="lg:w-1/2 text-center lg:text-left mt-6 lg:mt-0">
           <h2 className="text-2xl font-paytone font-bold text-gray-800">
             About Me
           </h2>
@@ -54,8 +58,9 @@ const AboutMe = () => {
             agile slick interaction. Aesthetics persona journey map research
             agile aesthetics, agile delight interaction service design.
           </p>
-          <NeuButton name="www.codeSpace.com" />
-          
+          <div className="flex justify-center md:justify-start">
+            <NeuButton name="www.codeSpace.com" />
+          </div>
         </div>
       </div>
       <div className="mt-6 lg:mt-0 lg:flex lg:flex-row lg:space-x-6 text-center lg:text-left">
@@ -77,3 +82,4 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
+
