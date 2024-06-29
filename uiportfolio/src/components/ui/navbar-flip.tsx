@@ -20,7 +20,7 @@ const HoverLink:React.FC<HoverButton>=({name})=> {
   return (
     <div ref={scope}>
       <ScrollLink
-        to={name}
+        to={name.toLowerCase()}
         smooth={true}
         duration={500}
         onMouseOver={onLinkHover}

@@ -28,7 +28,7 @@ const NeuButton: React.FC<NeuBtn> = ({ name }) => {
     >
       <button
         onClick={handleClick}
-        className="button text-2xl font-outfit items-center gap-2 rounded-full justify-between flex px-6 py-2 font-medium bg-indigo-500 text-white w-fit transition-all shadow-[3px_5px_0px_black]"
+        className="button text-2xl font-outfit items-center gap-2 mx-auto rounded-full justify-between flex px-6 py-2 font-medium bg-indigo-500 text-white w-fit transition-all shadow-[3px_5px_0px_black]"
       >
         {name}
        

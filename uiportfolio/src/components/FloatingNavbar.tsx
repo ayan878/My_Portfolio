@@ -28,7 +28,7 @@ function FloatingNavbar() {
         <LuBrainCog  className="text-sm md:text-2xl" />
       </ScrollLink>
       <ScrollLink
-        to="services"
+        to="about"
         spy={true}
         smooth={true}
         offset={-50}
