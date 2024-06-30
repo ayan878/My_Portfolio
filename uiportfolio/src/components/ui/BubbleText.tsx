@@ -1,10 +1,10 @@
 import styles from "./Bubble.module.css";
 
 interface BubbleProps{
-  className:String
+  className:string
 }
 export const BubbleText :React.FC<BubbleProps> =({className}) => {
-  const text = `I've spent the last 5 years building and scaling software for some pretty cool companies. I also teach people to paint online (in case you've got an empty canvas layin' around 🎨). Let's connect!`;
+  const text = `I've spent the last 5 years building and scaling software for some pretty cool companies. I also teach people to paint online (in case you've got an empty canvas layin' around.`;
 
   //   const hoverTextStyle = {
   //     transition: "transform 0.3s ease-in-out, color 0.3s ease-in-out",
