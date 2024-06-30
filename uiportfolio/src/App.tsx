@@ -1,22 +1,19 @@
-
 import FloatingNavbar from "./components/FloatingNavbar";
-import AboutMe from "./pages/About";
-import Home from "./pages/Home";
 import Footer from "./components/Footer";
-
+import Skills from "./pages/Skills";
+import Home from "./pages/Home";
+import AboutMe from "./pages/About";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <div className="bg-[url('./src/assets/img/banner-bg.png')] h-screen bg-cover bg-center">
+    <div>
       <FloatingNavbar />
-      <Home/>
-      <AboutMe />
-
-      <Footer />
-      {/*
-       <Contact />
+      <Home />
       <Skills />
-      <Services /> */}
+      <Projects />
+      <AboutMe />
+      <Footer />
     </div>
   );
 }
