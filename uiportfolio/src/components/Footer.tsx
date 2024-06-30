@@ -1,22 +1,23 @@
-
 import { FaDiscord, FaGithub, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { useAnimatedBackgroundColor } from "./utils/backgroundUtils";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 import Logo from "../assets/codeSpace.png";
 const Footer = () => {
-    const date= new Date().getFullYear();
-    const {backgroundColor} =useAnimatedBackgroundColor()
+  const date = new Date().getFullYear();
+  const { backgroundColor } = useAnimatedBackgroundColor();
   return (
     <motion.footer
       className="bg-yellow-300 text-white py-12 rounded-tl-[96px] shadow-[0px_-12px_0px_black] font-outfit"
       style={{ backgroundColor }}
     >
-      <div className=" max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between gap-4 ">
+      <div className=" max-w-6xl mx-auto px-6 lg:px-8 flex justify-between gap-4 ">
         <div className="w-full sm:w-1/2 lg:w-2/5 mb-6">
           <div className="flex items-center gap-2  ">
             <img src={Logo} alt="logo" className="w-16 h-16 hidden md:flex" />
-            <h2 className="text-4xl font-paytone font-outline-0 text-indigo-600">codeSpace</h2>
+            <h2 className="text-4xl font-paytone font-outline-0 text-indigo-600">
+              codeSpace
+            </h2>
           </div>
           <p className="mt-4">
             Subscribe IslahTV YouTube channel to watch more videos on website
@@ -25,7 +26,9 @@ const Footer = () => {
           </p>
           <div className="md:hidden">
             <div className="w-full sm:w-1/2 lg:w-2/5 mb-6">
-              <h2 className="text-xl text-yellow-300 font-paytone ">Newsletter</h2>
+              <h2 className="text-xl text-yellow-300 font-paytone ">
+                Newsletter
+              </h2>
               <form action="#" className="mt-4 flex">
                 <input
                   type="email"
@@ -34,7 +37,7 @@ const Footer = () => {
                 />
                 <button
                   type="submit"
-                  className="p-2 bg-purple-900 hover:bg-pink-500 rounded-r"
+                  className="p-2 bg-yellow-300 hover:bg-pink-500 rounded-r"
                 >
                   →
                 </button>
@@ -106,7 +109,9 @@ const Footer = () => {
         </div>
         <div className="hidden md:flex">
           <div className="w-full sm:w-1/2 lg:w-2/5 mb-6">
-            <h2 className="text-xl text-yellow-300 font-paytone flex">Newsletter</h2>
+            <h2 className="text-xl text-yellow-300 font-paytone flex">
+              Newsletter
+            </h2>
             <form action="#" className="mt-4 flex">
               <input
                 type="email"
@@ -146,4 +151,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
