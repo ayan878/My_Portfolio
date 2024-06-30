@@ -121,7 +121,7 @@
 // export default ShuffleCard;
 
 import React, { useState } from "react";
-import { motion, AnimatePresence,} from "framer-motion";
+import { motion, AnimatePresence} from "framer-motion";
 import Mobile from "./ui/mobile-card";
 import myPic from "@/assets/ayan.jpg";
 import banner from "@/assets/banner-bg.png";
@@ -130,6 +130,7 @@ import logo from "@/assets/codeSpace.png";
 const ShuffleCard = () => {
   const pics = [myPic, banner, logo];
   const [cards, setCards] = useState(pics);
+
 
   // Function to shuffle cards in a circular queue manner
   const shuffleCards = () => {
@@ -148,15 +149,15 @@ const ShuffleCard = () => {
           {cards.map((pic, index) => (
             <motion.div
               key={index}
-              className="absolute w-full h-full"
+              className="absolute w-full h-full "
               style={{
                 rotate: index * 4 - 12,
-                top: index * 10,
-                left: index * 10,
+                top: index * 20,
+                left: index * 40,
                 zIndex: cards.length - index,
               }}
             >
-              <Mobile pic={pic} onDragEnd={shuffleCards}/>
+              <Mobile pic={pic} onDragEnd={shuffleCards} />
             </motion.div>
           ))}
         </AnimatePresence>
