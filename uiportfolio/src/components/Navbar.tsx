@@ -11,17 +11,20 @@ import {motion} from "framer-motion"
 const Navbar = () => {
   const {backgroundColor}=useAnimatedBackgroundColor();
   return (
-    <motion.nav style={{backgroundColor}} className="flex justify-between items-center p-4 bg-[#1d1840] bg-opacity-80 px-12">
-      <div className="flex items-center">
+    <motion.nav
+      style={{ backgroundColor }}
+      className="flex justify-between items-center p-4 bg-[#1d1840] bg-opacity-80 px-12"
+    >
+      <div className="flex items-center md:ml-14">
         <img src={Logo} alt="Logo" className="w-14 h-14" />
-        <span className="text-2xl text-white font-bold font-paytone">
+        <span className="text-3xl text-indigo-600 font-paytone font-outline-0 ">
           codeSpace
         </span>
       </div>
       <div className="hidden md:flex justify-between items-center">
         {/* Desktop menu items */}
         <HoverLink name="Home" />
-        <HoverLink name="Skills" /> 
+        <HoverLink name="Skills" />
         <HoverLink name="Projects" />
         <HoverLink name="About" />
       </div>
