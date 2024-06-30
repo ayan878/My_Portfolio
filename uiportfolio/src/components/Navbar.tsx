@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <motion.nav
       style={{ backgroundColor }}
-      className="flex justify-between items-center p-4 bg-[#1d1840] bg-opacity-80 px-12"
+      className="flex justify-between  items-center p-4 bg-[#1d1840] bg-opacity-80 px-16"
     >
       <div className="flex items-center md:ml-14">
         <img src={Logo} alt="Logo" className="w-14 h-14" />
@@ -21,7 +21,7 @@ const Navbar = () => {
           codeSpace
         </span>
       </div>
-      <div className="hidden md:flex justify-between items-center">
+      <div className="hidden lg:flex justify-between items-center">
         {/* Desktop menu items */}
         <HoverLink name="Home" />
         <HoverLink name="Skills" />
