@@ -20,15 +20,15 @@ function Projects() {
     },
   };
   return (
-    <div id="projects" className=" p-5">
-      <h1 className="text-7xl font-paytone text-center text-indigo-600 uppercase font-outline-1 mb-6 font-extrabold">
+    <div id="projects" className="py-4   ">
+      <h1 className="text-5xl md:text-6xl lg:text-7xl font-paytone text-center text-indigo-600 uppercase font-outline-2 mb-6 font-extrabold">
         Projects
       </h1>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center   ">
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="m-4"
+            className="m-4 px-8 md:px-4 grid md:grid-col-2"
             whileHover="hover"
             variants={cardVariants}
             initial="initial"
@@ -36,7 +36,7 @@ function Projects() {
             <img
               src={project}
               alt={`Project ${index + 1}`}
-              className="max-w-full h-auto rounded-3xl shadow-[6px_8px_0px_black] border-4 border-black"
+              className="max-w-full h-auto rounded-3xl shadow-[6px_8px_0px_black] border-2 border-black  "
             />
           </motion.div>
         ))}

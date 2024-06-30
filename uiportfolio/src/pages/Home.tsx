@@ -105,13 +105,12 @@ import ShuffleCard from "../components/ShuffleCards";
 
 function Home() {
   return (
-    <div id="home" className="min-h-screen">
+    <div id="home" className="w-full min-h-screen">
       <Navbar />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 px-4 md:px-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 px-4 md:px-12 ">
         <div className="p-8 md:pl-16 md:pr-8">
           <h1 className="text-5xl md:text-5xl font-extrabold font-paytone tracking-wide md:mt-4">
-            WELCOME, 
-            to my CodeSpace
+            WELCOME, to my CodeSpace
           </h1>
           <TypeAnimation
             className="text-blue-400 text-3xl md:text-4xl font-bold font-outfit mb-2 mt-6"
@@ -135,7 +134,9 @@ function Home() {
 
           <NeuLink name="Hire Me" icon="" />
         </div>
-        <ShuffleCard />
+        <div className="mr-20">
+          <ShuffleCard />
+        </div>
       </div>
     </div>
   );

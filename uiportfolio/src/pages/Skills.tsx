@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import SpringModal from "../components/ui/SpringModal"; // Adjust path as necessary
@@ -107,36 +108,40 @@ const Skills = () => {
   const secondHalfOfArraySkills = skills.slice(halfSkills);
 
   const [isOpen, setIsOpen] = useState(Array(skills.length).fill(false)); // Array to track modal states
+
+  const [showButton,setShowButton] =useState(true);
   const { backgroundColor } = useAnimatedBackgroundColor();
 
   const handleOpenModal = (index) => {
     const updatedIsOpen = [...isOpen];
     updatedIsOpen[index] = true;
     setIsOpen(updatedIsOpen);
+    setShowButton(false);
   };
 
   const handleCloseModal = (index) => {
     const updatedIsOpen = [...isOpen];
     updatedIsOpen[index] = false;
     setIsOpen(updatedIsOpen);
+    setShowButton(true);
   };
 
   return (
     <motion.section
       id="skills"
-      className="relative grid min-h-screen place-content-center overflow-hidden px-4 py-24 text-gray-200"
+      className="relative min-h-vh  mb-8 p-4 text-gray-200 overflow-hidden "
     >
-      <h1 className="text-7xl font-paytone text-center text-indigo-600 uppercase font-outline-1 mb-4 font-extrabold">
+      <h1 className="text-5xl md:text-6xl lg:text-7xl font-paytone text-center text-indigo-600 uppercase font-outline-2 mb-6 md:mt-16 font-extrabold">
         Skills
       </h1>
 
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 gap-4">
-          <pre className="font-paytone text-yellow-300 text-5xl font-outline-1 uppercase">
-            <p className="text-6xl mx-auto"> I have crafted my Self with </p>
-            <p className="text-center"> all these technologies</p>
+        <div className="grid gap-8">
+          <pre className="font-paytone text-yellow-300 text-3xl md:text-4xl lg:text-5xl font-outline-1 uppercase text-center">
+            <p> I have crafted myself with </p>
+            <p> all these technologies</p>
           </pre>
-          <div className="flex gap-4 mx-auto">
+          <div className="flex flex-wrap justify-center gap-4">
             {firstHalfOfArraySkills.map((skill, index) => (
               <motion.div
                 key={index}
@@ -144,12 +149,14 @@ const Skills = () => {
                 onMouseEnter={() => handleOpenModal(index)}
                 onMouseLeave={() => handleCloseModal(index)}
               >
-                <motion.button
-                  className="w-16 h-16 p-3 rounded-full flex items-center justify-center shadow-[0px_6px_0_black]"
-                  style={{ backgroundColor }}
-                >
-                  {skill.icon}
-                </motion.button>
+                {showButton && (
+                  <motion.button
+                    className="w-12 h-12 md:w-16 md:h-16 p-3 rounded-full flex items-center justify-center shadow-[0px_6px_0_black]"
+                    style={{ backgroundColor }}
+                  >
+                    {skill.icon}
+                  </motion.button>
+                )}
                 <SpringModal
                   title={skill.title}
                   icon={skill.icon}
@@ -161,7 +168,7 @@ const Skills = () => {
               </motion.div>
             ))}
           </div>
-          <div className="flex mx-auto gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             {secondHalfOfArraySkills.map((skill, index) => (
               <motion.div
                 key={index + halfSkills}
@@ -169,12 +176,14 @@ const Skills = () => {
                 onMouseEnter={() => handleOpenModal(index + halfSkills)}
                 onMouseLeave={() => handleCloseModal(index + halfSkills)}
               >
-                <motion.button
-                  className="w-16 h-16 p-3 rounded-full flex items-center justify-center shadow-[0px_6px_0_black]"
-                  style={{ backgroundColor }}
-                >
-                  {skill.icon}
-                </motion.button>
+                {showButton && (
+                  <motion.button
+                    className="w-12 h-12 md:w-16 md:h-16 p-3 rounded-full flex items-center justify-center shadow-[0px_6px_0_black]"
+                    style={{ backgroundColor }}
+                  >
+                    {skill.icon}
+                  </motion.button>
+                )}
                 <SpringModal
                   title={skill.title}
                   icon={skill.icon}
@@ -193,80 +202,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-
-
-// import React, { useState } from "react";
-// import { motion } from "framer-motion";
-
-// const CircularProgressBar = ({ progress }) => {
-//   const svgSize = 120; // Size of the SVG container
-//   const strokeWidth = 8; // Stroke width of the progress bar
-//   const radius = (svgSize - strokeWidth) / 2; // Radius of the circle
-
-//   // Calculate the circumference of the circle
-//   const circumference = 2 * Math.PI * radius;
-
-//   // Calculate the strokeDasharray and strokeDashoffset
-//   const strokeDasharray = circumference;
-//   const strokeDashoffset = strokeDasharray - (progress / 100) * circumference;
-
-//   return (
-//     <svg
-//       className="w-24 h-24"
-//       viewBox={`0 0 ${svgSize} ${svgSize}`}
-//       xmlns="http://www.w3.org/2000/svg"
-//     >
-//       <motion.circle
-//         cx={svgSize / 2}
-//         cy={svgSize / 2}
-//         r={radius}
-//         fill="transparent"
-//         strokeWidth={strokeWidth}
-//         stroke="#6B46C1"
-//         strokeLinecap="round"
-//         strokeDasharray={strokeDasharray}
-//         strokeDashoffset={strokeDashoffset}
-//         initial={{ strokeDashoffset: circumference }}
-//         animate={{ strokeDashoffset }}
-//         transition={{ duration: 0.5 }}
-//       />
-//     </svg>
-//   );
-// };
-
-// const Skills = () => {
-//   const [progress, setProgress] = useState(0);
-
-//   // Example function to increase progress
-//   const increaseProgress = () => {
-//     if (progress < 100) {
-//       setProgress(progress + 10);
-//     }
-//   };
-
-//   // Example function to reset progress
-//   const resetProgress = () => {
-//     setProgress(0);
-//   };
-
-//   return (
-//     <div className="flex flex-col items-center justify-center h-screen">
-//       <CircularProgressBar progress={progress} />
-//       <button
-//         className="bg-purple-600 text-white px-4 py-2 rounded-md mt-4"
-//         onClick={increaseProgress}
-//       >
-//         Increase Progress
-//       </button>
-//       <button
-//         className="bg-gray-600 text-white px-4 py-2 rounded-md mt-4"
-//         onClick={resetProgress}
-//       >
-//         Reset Progress
-//       </button>
-//     </div>
-//   );
-// };
-
-// export default Skills;
