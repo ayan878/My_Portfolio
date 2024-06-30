@@ -33,7 +33,7 @@ const SpringModal: React.FC<ModalProps> = ({
           animate={{ scale: 1, rotate: "0deg" }}
           exit={{ scale: 0, rotate: "0deg" }}
           onClick={(e) => e.stopPropagation()}
-          className="absolute top-1/4 left-1/4 text-white p-6 rounded-lg w-full max-w-lg shadow-[6px_6px_0px_black] cursor-default overflow-hidden"
+          className=" text-white p-6 rounded-lg w-full max-w-lg shadow-[6px_6px_0px_black] cursor-default overflow-hidden"
         >
           <FiAlertCircle className="text-white/10 rotate-12 text-[250px] absolute z-0 -top-24 -left-24" />
           <div className="relative z-10">
