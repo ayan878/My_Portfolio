@@ -1,4 +1,3 @@
-import React from "react";
 import myPic from "../assets/ayan.jpg";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 import { useAnimatedBackgroundColor } from "../components/utils/backgroundUtils";
@@ -49,7 +48,7 @@ const AboutMe = () => {
           </motion.div>
         </motion.div>
         <div className="lg:w-1/2 text-center lg:text-left mt-6 lg:mt-0">
-          <h2 className="text-2xl font-paytone font-bold text-gray-800">
+          <h2 className="text-5xl font-paytone font-bold text-yellow-300 font-outline-1">
             About Me
           </h2>
           <p className="text-gray-600 text-2xl font-outfit mt-4 mb-4">
@@ -63,18 +62,30 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div className="mt-6 lg:mt-0 lg:flex lg:flex-row lg:space-x-6 text-center lg:text-left">
+      <div className="mt-6 lg:mt-0 lg:flex lg:flex-row lg:space-x-6 text-center lg:text-center md:ml-24">
         <div className="lg:w-1/3">
-          <h3 className="text-xl font-bold text-gray-800">20+</h3>
-          <p className="text-gray-600">Years of Experience</p>
+          <h3 className="text-5xl font-paytone text-indigo-600 font-outline-2">
+            20+
+          </h3>
+          <p className="text-yellow-300 text-3xl font-bold font-outline-1">
+            Years of Experience
+          </p>
         </div>
         <div className="lg:w-1/3 mt-4 lg:mt-0">
-          <h3 className="text-xl font-bold text-gray-800">15+</h3>
-          <p className="text-gray-600">Award Winning</p>
+          <h3 className="text-5xl font-paytone text-indigo-600 font-outline-2">
+            15+
+          </h3>
+          <p className="text-yellow-300 text-3xl font-bold font-outline-1">
+            Award Winning
+          </p>
         </div>
-        <div className="lg:w-1/3 mt-4 lg:mt-0">
-          <h3 className="text-xl font-bold text-gray-800">100+</h3>
-          <p className="text-gray-600">Projects Done</p>
+        <div className="lg:w-1/3 mt-4 lg:mt-0 ">
+          <h3 className="text-5xl font-paytone text-indigo-600 font-outline-2">
+            100+
+          </h3>
+          <p className="text-yellow-300 text-3xl font-bold font-outline-1">
+            Projects Done
+          </p>
         </div>
       </div>
     </div>
