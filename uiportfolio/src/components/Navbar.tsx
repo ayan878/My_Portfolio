@@ -21,7 +21,7 @@ const Navbar:React.FC = () => {
           codeSpace
         </span>
       </div>
-      <div className="hidden lg:flex justify-between items-center">
+      <div className="hidden md:flex justify-between items-center">
         {/* Desktop menu items */}
         <HoverLink name="Home" />
         <HoverLink name="Skills" />
@@ -36,20 +36,20 @@ const Navbar:React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub className="w-8 h-8 mx-2 text-white" />
+          <FaGithub className="w-4 h-4 md:w-8 md:h-8 mx-auto text-white" />
         </a>
         <a
           href="https://www.linkedin.com/login"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Linkedin className="w-8 h-8 mx-2 text-blue-400" />
+          <Linkedin className="w-4 h-4 md:w-8 md:h-8 mx-auto text-blue-400" />
         </a>
         <a href="#">
-          <SiLeetcode className="w-8 h-8 mx-2 text-yellow-400" />
+          <SiLeetcode className="w-4 h-4 md:w-8 md:h-8 mx-auto text-yellow-400" />
         </a>
         <a href="https://www.twitter.com">
-          <FaHackerrank className="w-8 h-8 mx-2 text-green-400" />
+          <FaHackerrank className="w-4 h-4 md:w-8 md:h-8 mx-auto text-green-400" />
         </a>
       </div>
     </motion.nav>
