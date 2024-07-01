@@ -26,7 +26,7 @@ const NeuLink:React.FC<NeuBtn> = ({name}) => {
   return (
     <div
       ref={scope}
-      className="bg-white flex items-center justify-between w-64"
+      className="bg-white flex items-center justify-between w-36 sm:w-40 md:w-52 lg:w-64"
     >
       <button
         onClick={handleClick}
