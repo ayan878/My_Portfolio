@@ -18,7 +18,7 @@ export const BubbleText :React.FC<BubbleProps> =({className}) => {
 
 
   return (
-    <h2 className={`text-left text-2xl font-thin text-red-400 ${className}`}>
+    <h2 className={`text-left text-xl md:text-2xl font-thin text-red-400 ${className}`}>
       {text.split("").map((child, idx) => (
         <span className={styles.hoverText} key={idx}>
           {child}

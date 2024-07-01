@@ -110,11 +110,11 @@ const Home:React.FC=()=> {
       <Navbar />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 px-4 md:px-12 ">
         <div className="p-8 md:pl-16 md:pr-8">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold font-paytone tracking-wide md:mt-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-paytone tracking-wide md:mt-4">
             WELCOME, to my CodeSpace
           </h1>
           <TypeAnimation
-            className="text-blue-400 text-3xl md:text-4xl font-bold font-outfit mb-2 mt-6"
+            className="text-blue-400 text-xlsm:text-2xl md:text-4xl font-bold font-outfit mb-2 mt-6"
             sequence={[
               "I'm Ayan Raza",
               1000,
