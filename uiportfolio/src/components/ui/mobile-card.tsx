@@ -38,7 +38,7 @@ const Mobile: React.FC<MobileProps> = ({ pic, onDragEnd }) => {
           backgroundColor,
           transformStyle: "preserve-3d",
         }}
-        className="absolute inset-0 grid rounded-xl border-2 border-black"
+        className="absolute inset-0 grid rounded-xl border-2 border-black shadow-[6px_6px_0px_black]"
       >
         <img
           src={pic}
