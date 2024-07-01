@@ -1,4 +1,5 @@
 import styles from "./Bubble.module.css";
+import React from "react"
 
 interface BubbleProps{
   className:string
@@ -27,4 +28,4 @@ export const BubbleText :React.FC<BubbleProps> =({className}) => {
   );
 };
 
-export default BubbleText;
+

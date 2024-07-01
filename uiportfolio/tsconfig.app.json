@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
+    "esModuleInterop": false,
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2020",
