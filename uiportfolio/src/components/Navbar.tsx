@@ -15,7 +15,7 @@ const Navbar:React.FC = () => {
       style={{ backgroundColor }}
       className="flex justify-between  items-center p-4 bg-opacity-80 px-16"
     >
-      <div className="flex items-center md:ml-14">
+      <div className="flex items-center md:ml-14 border border-black">
         <img src={Logo} alt="Logo" className="w-10 h-10 sm:w-12 sm:h-12  md:w-14 md:h-14" />
         <span className="text-xl md:text-3xl text-indigo-600 font-paytone font-outline-0 ">
           codeSpace
