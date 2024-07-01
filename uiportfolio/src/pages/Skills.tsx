@@ -21,7 +21,7 @@ import {
 } from "react-icons/si";
 import { FiFramer } from "react-icons/fi";
 
-const Skills = () => {
+const Skills:React.FC = () => {
   const skills = [
     {
       title: "Figma",
