@@ -443,7 +443,7 @@ const Skills: React.FC = () => {
   return (
     <motion.section
       id="skills"
-      className="relative mt-20 h-[100vh] mb-8 p-4 text-gray-200 border-4 border-black"
+      className="relative mt-20 mb-8 p-4 text-gray-200 border-4 border-black"
     >
       <h1 className="text-5xl md:text-6xl lg:text-7xl font-paytone text-center text-indigo-600 uppercase font-outline-2 mb-6 md:mt-16 font-extrabold">
         Skills

@@ -25,7 +25,7 @@ const Navbar:React.FC = () => {
           codeSpace
         </span>
       </div>
-      <div className="hidden md:flex justify-between items-center">
+      <div className="hidden lg:flex justify-between items-center">
         {/* Desktop menu items */}
         <HoverLink name="Home" />
         <HoverLink name="Skills" />
