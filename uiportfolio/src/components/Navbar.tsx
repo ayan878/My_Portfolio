@@ -15,7 +15,7 @@ const Navbar:React.FC = () => {
       style={{ backgroundColor }}
       className="flex justify-between items-center p-4 px-4 md:px-8 lg:px-16"
     >
-      <div className="flex items-center md:ml-14">
+      <div className="flex items-center ml-8 sm:ml-10 md:ml-14">
         <img
           src={Logo}
           alt="Logo"
