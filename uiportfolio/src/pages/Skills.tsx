@@ -451,7 +451,7 @@ const Skills: React.FC = () => {
 
       <div className="max-w-6xl mx-auto">
         <div className="grid">
-          <pre className="font-paytone text-yellow-300 text-xl sm:text-2xl md:text-4xl lg:text-5xl font-outline-1 uppercase text-center mb-4 md:mb-8">
+          <pre className="font-paytone text-yellow-300 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-outline-1 uppercase text-center mb-4 md:mb-8">
             <p>I have crafted myself with</p>
             <p>all these technologies</p>
           </pre>
