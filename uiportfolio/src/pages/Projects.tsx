@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const projects = [project1, project2, project3, project1];
 
-const Projects:React=()=> {
+const Projects:React.FC=()=> {
   const cardVariants = {
     initial: {
       scale: 1,
