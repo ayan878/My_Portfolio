@@ -106,7 +106,7 @@ import React from "react";
 
 const Home:React.FC=()=> {
   return (
-    <div id="home" className="w-full min-h-screen">
+    <div id="home" className="w-full h-[100vh] mb-4">
       <Navbar />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 px-4 md:px-12 ">
         <div className="p-8 md:pl-16 md:pr-8">

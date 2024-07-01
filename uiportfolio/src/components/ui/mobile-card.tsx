@@ -22,7 +22,7 @@ const Mobile: React.FC<MobileProps> = ({ pic, onDragEnd }) => {
 
   return (
     <motion.div
-      className="relative h-4/5 md:h-full w-3/5 md:w-4/5 rounded-xl border-1 shadow-md mx-auto"
+      className="relative h-2/5 sm:h-3/5 md:h-full w-3/5 md:w-4/5 rounded-xl mr-4 shadow-md mx-auto"
       style={{
         rotate,
         backgroundColor,
