@@ -135,7 +135,7 @@ const Home:React.FC=()=> {
 
           <NeuLink name="Hire Me"/>
         </div>
-        <div className="mr-20">
+        <div className="mr-24 md:mr-20">
           <ShuffleCard />
         </div>
       </div>

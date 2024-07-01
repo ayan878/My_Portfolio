@@ -459,7 +459,7 @@ const Skills: React.FC = () => {
             {firstHalfOfArraySkills.map((skill, index) => (
               <motion.div
                 key={index}
-                className="flex items-center gap-2 m-2"
+                className="flex items-center gap-2 m-2 "
                 onMouseEnter={() => handleOpenModal(index)}
                 onMouseLeave={() => handleCloseModal(index)}
               >

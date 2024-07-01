@@ -225,7 +225,7 @@ import myPic from "@/assets/ayan.jpg";
 import banner from "@/assets/banner-bg.png";
 import logo from "@/assets/codeSpace.png";
 
-const ShuffleCard: React.FC = () => {
+const  ShuffleCard: React.FC = () => {
   const pics: string[] = [myPic, banner, logo];
   const [cards, setCards] = useState<string[]>(pics);
 
@@ -243,7 +243,7 @@ const ShuffleCard: React.FC = () => {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="relative -top-2 sm:top-4  mb-12 w-full h-full max-w-3xl max-h-3xl md:max-w-full md:max-h-full">
+      <div className="relative -top-2 sm:top-4  md:top-8 mb-12 w-full h-full max-w-3xl max-h-3xl md:max-w-full md:max-h-full">
         <AnimatePresence>
           {cards.map((pic, index) => (
             <motion.div
