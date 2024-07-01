@@ -1,7 +1,7 @@
 
-import { useState } from "react";
+import React,{ useState } from "react";
 import { motion } from "framer-motion";
-import SpringModal from "../components/ui/SpringModal"; // Adjust path as necessary
+import SpringModal from "../components/ui/SpringModal"; 
 import { useAnimatedBackgroundColor } from "../components/utils/backgroundUtils";
 import {
   FaFigma,
