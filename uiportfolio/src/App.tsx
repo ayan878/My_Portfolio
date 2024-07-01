@@ -4,8 +4,9 @@ import Skills from "./pages/Skills";
 import Home from "./pages/Home";
 import AboutMe from "./pages/About";
 import Projects from "./pages/Projects";
+import React from "react"
 
-function App() {
+const App:React.FC=()=> {
   return (
     <div>
       <FloatingNavbar />

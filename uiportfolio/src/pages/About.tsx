@@ -95,13 +95,14 @@
 // export default AboutMe;
 
 
+import React from "react"
 import myPic from "../assets/ayan.jpg";
-import { motion, useTransform, useViewportScroll } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useAnimatedBackgroundColor } from "../components/utils/backgroundUtils";
 import NeuButton from "../components/ui/BoxShadowButton";
 
-const AboutMe = () => {
-  const { scrollYProgress } = useViewportScroll();
+const AboutMe:React.FC = () => {
+  const { scrollYProgress } = useScroll();
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 6]);
   const { backgroundColor } = useAnimatedBackgroundColor();
 

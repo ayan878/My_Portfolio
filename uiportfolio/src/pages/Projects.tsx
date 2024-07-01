@@ -1,3 +1,4 @@
+import React from "react"
 import project1 from "../assets/project-img1.png";
 import project2 from "../assets/project-img2.png";
 import project3 from "../assets/project-img3.png";
@@ -6,7 +7,7 @@ import { motion } from "framer-motion";
 
 const projects = [project1, project2, project3, project1];
 
-function Projects() {
+const Projects:React=()=> {
   const cardVariants = {
     initial: {
       scale: 1,

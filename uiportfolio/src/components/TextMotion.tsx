@@ -1,9 +1,12 @@
-
 import { motion } from "framer-motion";
 import "./TextMotion.css";
-import { memo } from "react";
+import React, { memo } from "react";
 
-function TextMotion({className}) {
+interface TextProps {
+  className: string;
+}
+
+const TextMotion: React.FC<TextProps> = ({ className }) => {
   return (
     <motion.h1
       className={`glitter-text ${className}`}
@@ -16,8 +19,7 @@ function TextMotion({className}) {
       empty canvas layin' around 🎨). Let's connect!
     </motion.h1>
   );
-}
-
+};
 
 const Stars = () => {
   const randomMove = () => Math.random() * 4 - 2;
@@ -57,6 +59,5 @@ const Stars = () => {
 };
 
 export const MemoizedStars = memo(Stars);
-
 
 export default TextMotion;
