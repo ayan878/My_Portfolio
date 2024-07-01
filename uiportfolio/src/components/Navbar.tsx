@@ -1,4 +1,3 @@
-
 import Logo from "../assets/codeSpace.png";
 import { FaGithub, FaHackerrank } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
@@ -14,7 +13,7 @@ const Navbar:React.FC = () => {
   return (
     <motion.nav
       style={{ backgroundColor }}
-      className="flex justify-between  items-center p-4 bg-[#1d1840] bg-opacity-80 px-16"
+      className="flex flex-wrap justify-between  items-center p-4 bg-opacity-80 px-16"
     >
       <div className="flex items-center md:ml-14">
         <img src={Logo} alt="Logo" className="w-14 h-14" />
@@ -58,3 +57,64 @@ const Navbar:React.FC = () => {
 };
 
 export default Navbar;
+
+
+// import React from "react";
+// import { FaGithub, FaHackerrank } from "react-icons/fa";
+// import { SiLeetcode } from "react-icons/si";
+// import { Linkedin } from "lucide-react";
+// import HoverLink from "./ui/navbar-flip";
+// import { useAnimatedBackgroundColor } from "./utils/backgroundUtils";
+// import { motion } from "framer-motion";
+// import Logo from "../assets/codeSpace.png";
+
+// const Navbar: React.FC = () => {
+//   const { backgroundColor } = useAnimatedBackgroundColor();
+//   return (
+//     <motion.nav
+//       style={{ backgroundColor }}
+//       className="f justify-between items-center p-4 bg-[#1d1840] bg-opacity-80"
+//     >
+//       <div className="flex items-center md:ml-14 mb-4 md:mb-0">
+//         <img src={Logo} alt="Logo" className="w-14 h-14" />
+//         <span className="text-3xl text-indigo-600 font-paytone font-outline-0 ml-2">
+//           codeSpace
+//         </span>
+//       </div>
+//       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between w-full lg:w-auto mb-4 lg:mb-0">
+//         {/* Desktop menu items */}
+//         <div className="hidden lg:flex lg:items-center lg:space-x-4">
+//           <HoverLink name="Home" />
+//           <HoverLink name="Skills" />
+//           <HoverLink name="Projects" />
+//           <HoverLink name="About" />
+//         </div>
+//         <div className="flex justify-center lg:justify-end items-center w-full lg:w-auto space-x-2 lg:space-x-4">
+//           {/* Social icons */}
+//           <a
+//             href="https://github.com/ayan878"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             <FaGithub className="w-8 h-8 text-white" />
+//           </a>
+//           <a
+//             href="https://www.linkedin.com/login"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             <Linkedin className="w-8 h-8 text-blue-400" />
+//           </a>
+//           <a href="#">
+//             <SiLeetcode className="w-8 h-8 text-yellow-400" />
+//           </a>
+//           <a href="https://www.twitter.com">
+//             <FaHackerrank className="w-8 h-8 text-green-400" />
+//           </a>
+//         </div>
+//       </div>
+//     </motion.nav>
+//   );
+// };
+
+// export default Navbar;

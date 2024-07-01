@@ -8,7 +8,7 @@ import React from "react"
 
 const App:React.FC=()=> {
   return (
-    <div>
+    <div className="border-4 border-black">
       <FloatingNavbar />
       <Home />
       <Skills />

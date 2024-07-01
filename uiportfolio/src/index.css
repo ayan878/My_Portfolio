@@ -10,7 +10,7 @@ body{
   min-height: 100vh;
   width: 100vw;
   /* background-color: brown; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 @layer base {
   .font-outline-0 {
