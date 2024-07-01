@@ -133,7 +133,7 @@ const Home:React.FC=()=> {
 
           <BubbleText className="font-paytone mb-4 md:mb-8 mt-2" />
 
-          <NeuLink name="Hire Me" icon="" />
+          <NeuLink name="Hire Me"/>
         </div>
         <div className="mr-20">
           <ShuffleCard />

@@ -63,12 +63,12 @@
 // export default FloatingNavbar;
 
 
+import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { FaHome, FaCodeBranch, FaUser } from "react-icons/fa";
 import { LuBrainCog } from "react-icons/lu";
 import { motion } from "framer-motion";
 import { useAnimatedBackgroundColor } from "./utils/backgroundUtils";
-import React from "react";
 
 
 const FloatingNavbar:React.FC=()=> {
