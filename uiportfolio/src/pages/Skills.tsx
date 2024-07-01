@@ -443,7 +443,7 @@ const Skills: React.FC = () => {
   return (
     <motion.section
       id="skills"
-      className="relative mt-20 mb-8 p-4 text-gray-200 border-4 border-black"
+      className="relative mt-20 mb-8 p-4 text-gray-200 gap-8"
     >
       <h1 className="text-5xl md:text-6xl lg:text-7xl font-paytone text-center text-indigo-600 uppercase font-outline-2 mb-6 md:mt-16 font-extrabold">
         Skills
@@ -451,7 +451,7 @@ const Skills: React.FC = () => {
 
       <div className="max-w-6xl mx-auto">
         <div className="grid">
-          <pre className="font-paytone text-yellow-300 text-xl sm:text-2xl md:text-4xl lg:text-5xl font-outline-1 uppercase text-center mb-2 md:mb-4">
+          <pre className="font-paytone text-yellow-300 text-xl sm:text-2xl md:text-4xl lg:text-5xl font-outline-1 uppercase text-center mb-4 md:mb-8">
             <p>I have crafted myself with</p>
             <p>all these technologies</p>
           </pre>

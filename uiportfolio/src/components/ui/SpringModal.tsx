@@ -33,18 +33,18 @@ const SpringModal: React.FC<ModalProps> = ({
           animate={{ scale: 1, rotate: "0deg" }}
           exit={{ scale: 0, rotate: "0deg" }}
           onClick={(e) => e.stopPropagation()}
-          className=" text-white p-6 rounded-lg w-full max-w-lg shadow-[6px_6px_0px_black] cursor-default overflow-hidden"
+          className="top-4 left-14 text-white p-6 rounded-lg w-full max-w-lg shadow-[6px_6px_0px_black] cursor-default overflow-hidden"
         >
           <FiAlertCircle className="text-white/10 rotate-12 text-[250px] absolute z-0 -top-24 -left-24" />
-          <div className="relative z-10">
-            <div className="bg-white w-16 h-16 mb-2 rounded-full text-3xl grid place-items-center mx-auto">
+        
+            <div className="bg-white w-16 h-16 rounded-full text-3xl grid place-items-center mx-auto">
               {icon} {/* Render icon directly */}
             </div>
             <h3 className="text-3xl font-paytone text-center text-indigo-600 font-outline-0 mb-2 ">
               {title}
             </h3>
             <p className="text-center mb-6 font-outfit">{description}</p>
-          </div>
+        
         </motion.div>
       )}
     </AnimatePresence>

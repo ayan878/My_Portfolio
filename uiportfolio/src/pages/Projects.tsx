@@ -29,7 +29,7 @@ const Projects:React.FC=()=> {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="m-4 px-8 md:px-4 grid md:grid-col-2"
+            className="px-8 md:px-4 grid md:grid-col-2"
             whileHover="hover"
             variants={cardVariants}
             initial="initial"
