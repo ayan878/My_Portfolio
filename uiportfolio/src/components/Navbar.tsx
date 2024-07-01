@@ -13,11 +13,11 @@ const Navbar:React.FC = () => {
   return (
     <motion.nav
       style={{ backgroundColor }}
-      className="flex flex-wrap justify-between  items-center p-4 bg-opacity-80 px-16"
+      className="flex flex-wrap justify-between w-full  items-center p-4 bg-opacity-80 px-16"
     >
       <div className="flex items-center md:ml-14">
-        <img src={Logo} alt="Logo" className="w-14 h-14" />
-        <span className="text-3xl text-indigo-600 font-paytone font-outline-0 ">
+        <img src={Logo} alt="Logo" className="w-10 h-10 sm:w-12 sm:h-12  md:w-14 md:h-14" />
+        <span className="text-xl md:text-3xl text-indigo-600 font-paytone font-outline-0 ">
           codeSpace
         </span>
       </div>
