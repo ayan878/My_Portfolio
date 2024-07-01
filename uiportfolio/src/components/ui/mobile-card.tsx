@@ -1,6 +1,5 @@
 
-
-import { motion, useTransform, useViewportScroll } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { PhoneCall, MessageCircle } from "lucide-react";
 import { IoReorderThree } from "react-icons/io5";
 import { BiHome } from "react-icons/bi";
@@ -8,15 +7,22 @@ import { PiLessThanBold } from "react-icons/pi";
 import { BsWhatsapp } from "react-icons/bs";
 import { SiLeetcode } from "react-icons/si";
 import { useAnimatedBackgroundColor } from "../utils/backgroundUtils";
+import React from "react";
 
-function Mobile({ pic, onDragEnd }) {
+
+interface MobileProps {
+  pic: string; // Assuming pic is a string representing the image source
+  onDragEnd: () => void; // Assuming onDragEnd is a function with no arguments and no return value
+}
+
+const Mobile: React.FC<MobileProps> = ({ pic, onDragEnd }) => {
   const { backgroundColor } = useAnimatedBackgroundColor();
-  const { scrollYProgress } = useViewportScroll();
+  const { scrollYProgress } = useScroll();
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 45]);
 
   return (
     <motion.div
-      className="relative h-4/5 md:h-full w-3/5 md:w-4/5 rounded-xl border-1 shadow-[6px_6px_0px_black] mx-auto"
+      className="relative h-4/5 md:h-full w-3/5 md:w-4/5 rounded-xl border-1 shadow-md mx-auto"
       style={{
         rotate,
         backgroundColor,
@@ -53,6 +59,6 @@ function Mobile({ pic, onDragEnd }) {
       </motion.div>
     </motion.div>
   );
-}
+};
 
 export default Mobile;

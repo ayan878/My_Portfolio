@@ -6,9 +6,10 @@ import { Linkedin } from "lucide-react";
 import HoverLink from "./ui/navbar-flip";
 import { useAnimatedBackgroundColor } from "./utils/backgroundUtils";
 import {motion} from "framer-motion"
+import React from "react"
 
 
-const Navbar = () => {
+const Navbar:React.FC = () => {
   const {backgroundColor}=useAnimatedBackgroundColor();
   return (
     <motion.nav

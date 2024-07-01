@@ -3,7 +3,8 @@ import { useAnimatedBackgroundColor } from "./utils/backgroundUtils";
 import { motion } from "framer-motion";
 
 import Logo from "../assets/codeSpace.png";
-const Footer = () => {
+import React from "react"
+const Footer:React.FC = () => {
   const date = new Date().getFullYear();
   const { backgroundColor } = useAnimatedBackgroundColor();
   return (

@@ -2,11 +2,11 @@ import { FiArrowRight } from "react-icons/fi";
 import { useAnimate } from "framer-motion";
 import React from "react";
 
+
 interface NeuBtn{
   name:string
-  icon?:string
 }
-const NeuLink:React.FC<NeuBtn> = ({name,icon}) => {
+const NeuLink:React.FC<NeuBtn> = ({name}) => {
   const [scope, animate] = useAnimate();
 
   const handleClick = () => {

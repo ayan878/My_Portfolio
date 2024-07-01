@@ -68,8 +68,10 @@ import { FaHome, FaCodeBranch, FaUser } from "react-icons/fa";
 import { LuBrainCog } from "react-icons/lu";
 import { motion } from "framer-motion";
 import { useAnimatedBackgroundColor } from "./utils/backgroundUtils";
+import React from "react";
 
-function FloatingNavbar() {
+
+const FloatingNavbar:React.FC=()=> {
   const { backgroundColor } = useAnimatedBackgroundColor();
 
   return (

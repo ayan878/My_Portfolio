@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import SpringModal from "../components/ui/SpringModal"; // Adjust path as necessary
 import { useAnimatedBackgroundColor } from "../components/utils/backgroundUtils";
@@ -112,14 +112,14 @@ const Skills = () => {
   const [showButton,setShowButton] =useState(true);
   const { backgroundColor } = useAnimatedBackgroundColor();
 
-  const handleOpenModal = (index) => {
+  const handleOpenModal = (index:number) => {
     const updatedIsOpen = [...isOpen];
     updatedIsOpen[index] = true;
     setIsOpen(updatedIsOpen);
     setShowButton(false);
   };
 
-  const handleCloseModal = (index) => {
+  const handleCloseModal = (index:number) => {
     const updatedIsOpen = [...isOpen];
     updatedIsOpen[index] = false;
     setIsOpen(updatedIsOpen);

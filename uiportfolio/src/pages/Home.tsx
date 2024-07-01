@@ -102,8 +102,9 @@ import Navbar from "../components/Navbar";
 import { BubbleText } from "../components/ui/BubbleText";
 import NeuLink from "../components/ui/BoxShadowLink";
 import ShuffleCard from "../components/ShuffleCards";
+import React from "react";
 
-function Home() {
+const Home:React.FC=()=> {
   return (
     <div id="home" className="w-full min-h-screen">
       <Navbar />

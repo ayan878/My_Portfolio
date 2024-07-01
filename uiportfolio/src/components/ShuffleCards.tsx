@@ -120,24 +120,73 @@
 
 // export default ShuffleCard;
 
+// import React, { useState } from "react";
+// import { motion, AnimatePresence} from "framer-motion";
+// import Mobile from "./ui/mobile-card";
+// import myPic from "@/assets/ayan.jpg";
+// import banner from "@/assets/banner-bg.png";
+// import logo from "@/assets/codeSpace.png";
+
+// const ShuffleCard = () => {
+//   const pics = [myPic, banner, logo];
+//   const [cards, setCards] = useState(pics);
+
+
+//   // Function to shuffle cards in a circular queue manner
+//   const shuffleCards = () => {
+//     setCards((prevCards) => {
+//       const shuffled = [...prevCards];
+//       const topCard = shuffled.shift();
+//       shuffled.push(topCard);
+//       return shuffled;
+//     });
+//   };
+
+//   return (
+//     <div className="flex justify-center items-center h-screen">
+//       <div className="relative w-full h-full">
+//         <AnimatePresence>
+//           {cards.map((pic, index) => (
+//             <motion.div
+//               key={index}
+//               className="absolute w-full h-full "
+//               style={{
+//                 rotate: index * 4 - 12,
+//                 top: index * 20,
+//                 left: index * 40,
+//                 zIndex: cards.length - index,
+//               }}
+//             >
+//               <Mobile pic={pic} onDragEnd={shuffleCards} />
+//             </motion.div>
+//           ))}
+//         </AnimatePresence>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ShuffleCard;
+
 import React, { useState } from "react";
-import { motion, AnimatePresence} from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Mobile from "./ui/mobile-card";
 import myPic from "@/assets/ayan.jpg";
 import banner from "@/assets/banner-bg.png";
 import logo from "@/assets/codeSpace.png";
 
-const ShuffleCard = () => {
-  const pics = [myPic, banner, logo];
-  const [cards, setCards] = useState(pics);
-
+const ShuffleCard: React.FC = () => {
+  const pics: string[] = [myPic, banner, logo];
+  const [cards, setCards] = useState<string[]>(pics);
 
   // Function to shuffle cards in a circular queue manner
   const shuffleCards = () => {
     setCards((prevCards) => {
       const shuffled = [...prevCards];
       const topCard = shuffled.shift();
-      shuffled.push(topCard);
+      if (topCard) {
+        shuffled.push(topCard);
+      }
       return shuffled;
     });
   };
@@ -149,7 +198,7 @@ const ShuffleCard = () => {
           {cards.map((pic, index) => (
             <motion.div
               key={index}
-              className="absolute w-full h-full "
+              className="absolute w-full h-full"
               style={{
                 rotate: index * 4 - 12,
                 top: index * 20,
