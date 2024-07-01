@@ -455,7 +455,7 @@ const Skills: React.FC = () => {
             <p>I have crafted myself with</p>
             <p>all these technologies</p>
           </pre>
-          <div className="flex flex-wrap justify-center gap-1 sm:gap-2 md:gap-4 mx-auto">
+          <div className=" flex flex-wrap justify-center gap-1 sm:gap-2 md:gap-4 mx-auto">
             {firstHalfOfArraySkills.map((skill, index) => (
               <motion.div
                 key={index}
@@ -483,7 +483,7 @@ const Skills: React.FC = () => {
             ))}
           </div>
 
-          <div className="flex flex-wrap justify-center gap-1 sm:gap-2 md:gap-4 mx-auto">
+          <div className=" flex flex-wrap justify-center gap-1 sm:gap-2 md:gap-4 mx-auto">
             {secondHalfOfArraySkills.map((skill, index) => (
               <motion.div
                 key={index}
