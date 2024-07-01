@@ -36,20 +36,20 @@ const Navbar:React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub className="w-4 h-4 md:w-8 md:h-8 mx-auto text-white" />
+          <FaGithub className="w-4 h-4 md:w-8 md:h-8 mx-2 md:mx-4 text-white" />
         </a>
         <a
           href="https://www.linkedin.com/login"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Linkedin className="w-4 h-4 md:w-8 md:h-8 mx-auto text-blue-400" />
+          <Linkedin className="w-4 h-4 md:w-8 md:h-8 mx-2 md:mx-4 text-blue-400" />
         </a>
         <a href="#">
-          <SiLeetcode className="w-4 h-4 md:w-8 md:h-8 mx-auto text-yellow-400" />
+          <SiLeetcode className="w-4 h-4 md:w-8 md:h-8 mx-2 md:mx-4 text-yellow-400" />
         </a>
         <a href="https://www.twitter.com">
-          <FaHackerrank className="w-4 h-4 md:w-8 md:h-8 mx-auto text-green-400" />
+          <FaHackerrank className="w-4 h-4 md:w-8 md:h-8 mx-2m:;mx-4 text-green-400" />
         </a>
       </div>
     </motion.nav>
