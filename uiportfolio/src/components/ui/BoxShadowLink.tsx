@@ -1,5 +1,6 @@
 import { FiArrowRight } from "react-icons/fi";
 import { useAnimate } from "framer-motion";
+import resumePDF from "../../assets/AyanResume.pdf";
 import React from "react";
 
 
@@ -28,13 +29,15 @@ const NeuLink:React.FC<NeuBtn> = ({name}) => {
       ref={scope}
       className="bg-white flex items-center justify-between w-36 sm:w-40 md:w-52 lg:w-64"
     >
-      <button
+      <a
+        href={resumePDF}
+        download="AyanResume.pdf"
         onClick={handleClick}
         className="button text-lg md:text-2xl font-outfit items-center gap-2 rounded-full justify-between flex px-6 py-2 font-medium bg-indigo-500 text-white w-fit transition-all shadow-[3px_5px_0px_black]"
       >
         {name}
-         <FiArrowRight className="rightArrow" />
-      </button>
+        <FiArrowRight className="rightArrow" />
+      </a>
     </div>
   );
 };

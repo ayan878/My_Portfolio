@@ -131,9 +131,9 @@ const Home:React.FC=()=> {
             repeat={Infinity}
           />
 
-          <BubbleText className="font-paytone mb-4 md:mb-8 mt-2" />
+          <BubbleText className="font-paytone mb-4 md:mb-6 mt-2" />
 
-          <NeuLink name="Hire Me"/>
+          <NeuLink name="Hire Me" />
         </div>
         <div className="mr-24 md:mr-20">
           <ShuffleCard />
