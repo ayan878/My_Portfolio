@@ -94,14 +94,13 @@
 
 // export default AboutMe;
 
-
-import React from "react"
+import React from "react";
 import myPic from "../assets/ayan.jpg";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useAnimatedBackgroundColor } from "../components/utils/backgroundUtils";
 import NeuButton from "../components/ui/BoxShadowButton";
 
-const AboutMe:React.FC = () => {
+const AboutMe: React.FC = () => {
   const { scrollYProgress } = useScroll();
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 6]);
   const { backgroundColor } = useAnimatedBackgroundColor();
@@ -118,7 +117,8 @@ const AboutMe:React.FC = () => {
             rotate,
             backgroundColor,
             transformStyle: "preserve-3d",
-            transform: "rotateY(25deg)",
+            transition: "transform 0.2 ease-in-out",
+            transformOrigin: "bottom right",
           }}
         >
           <motion.div
@@ -126,6 +126,7 @@ const AboutMe:React.FC = () => {
               rotate,
               backgroundColor,
               transformStyle: "preserve-3d",
+              transformOrigin: "bottom right",
             }}
             className="absolute inset-0 grid rounded-xl border-2 border-black shadow-[3px_3px_0_black]"
           >
@@ -134,8 +135,9 @@ const AboutMe:React.FC = () => {
                 rotate,
                 backgroundColor,
                 transformStyle: "preserve-3d",
+                transformOrigin: "bottom right",
               }}
-              className="absolute inset-2 grid rounded-xl shadow-[3px_3px_0_black] border-2 border-black"
+              className="absolute inset-0 grid rounded-xl shadow-[3px_3px_0_black] border-2 border-black"
             >
               <img
                 src={myPic}
@@ -145,7 +147,7 @@ const AboutMe:React.FC = () => {
             </motion.div>
           </motion.div>
         </motion.div>
-        <div className="lg:w-1/2 text-center lg:text-left mt-6 lg:mt-0   ">
+        <div className="lg:w-1/2 text-center lg:text-left lg:mt-0 ml-8  ">
           <h2 className="text-5xl font-paytone font-bold text-yellow-300 font-outline-1">
             About Me
           </h2>

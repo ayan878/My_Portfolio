@@ -83,10 +83,11 @@ const Mobile: React.FC<MobileProps> = ({ pic, onDragEnd }) => {
     <motion.div
       className="relative h-2/5 sm:h-3/5 md:h-full w-3/5 md:w-4/5 rounded-xl mr-4 shadow-md mx-auto"
       style={{
-        rotate,
+        // rotate,
         backgroundColor,
         transformStyle: "preserve-3d",
-        transform: "rotateY(25deg)",
+        // transform: "rotateY(25deg)",
+        // transformOrigin:"left bottom"
       }}
       drag
       dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}

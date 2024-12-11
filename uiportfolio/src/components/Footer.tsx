@@ -14,8 +14,8 @@ const Footer: React.FC = () => {
       style={{ backgroundColor }}
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="flex flex-wrap justify-between gap-8">
-          <div className="w-full sm:w-1/2 lg:w-1/3 mb-6">
+        <div className="flex justify-between gap-8">
+          <div className="w-full sm:w-1/2 md:w-1.3 lg:w-1/3 mb-6">
             <div className="flex items-center gap-2">
               <img src={Logo} alt="logo" className="w-16 h-16 hidden md:flex" />
               <h2 className="text-4xl font-paytone font-outline-0 text-indigo-600">
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
               </a>
             </address>
           </div>
-          <div className="w-full sm:w-1/2 lg:w-1/5 mb-6">
+          <div className="w-full sm:w-1/2 lg:w-1/12 mb-6 ">
             <h2 className="text-xl text-yellow-300 font-paytone">Links</h2>
             <ul className="mt-4">
               <li className="mb-2">

@@ -5,7 +5,6 @@
 // // import banner from "@/assets/banner-bg.png";
 // // import logo from "@/assets/codeSpace.png";
 
-
 // // const ShuffleCard = () => {
 // //   const pics = [myPic, banner, logo];
 // //   const [cards, setCards] = useState(pics);
@@ -41,7 +40,7 @@
 
 // // export default ShuffleCard;
 
-// //! Above card is in Blocks to make it card here i ehnanced it 
+// //! Above card is in Blocks to make it card here i ehnanced it
 
 // // import React, { useState } from "react";
 // // import { AnimatePresence } from "framer-motion";
@@ -49,7 +48,6 @@
 // // import myPic from "@/assets/ayan.jpg";
 // // import banner from "@/assets/banner-bg.png";
 // // import logo from "@/assets/codeSpace.png";
-
 
 // // const ShuffleCard = () => {
 // //   const pics = [myPic, banner, logo];
@@ -79,8 +77,6 @@
 // // };
 
 // // export default ShuffleCard;
-
-
 
 // // import React, { useState } from "react";
 // // import { AnimatePresence } from "framer-motion";
@@ -130,7 +126,6 @@
 // // const ShuffleCard = () => {
 // //   const pics = [myPic, banner, logo];
 // //   const [cards, setCards] = useState(pics);
-
 
 // //   // Function to shuffle cards in a circular queue manner
 // //   const shuffleCards = () => {
@@ -217,15 +212,19 @@
 
 // export default ShuffleCard;
 
-
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import Mobile from "./ui/mobile-card";
 import myPic from "@/assets/ayan.jpg";
 import banner from "@/assets/banner-bg.png";
 import logo from "@/assets/codeSpace.png";
 
-const  ShuffleCard: React.FC = () => {
+const ShuffleCard: React.FC = () => {
   const pics: string[] = [myPic, banner, logo];
   const [cards, setCards] = useState<string[]>(pics);
 
@@ -241,18 +240,28 @@ const  ShuffleCard: React.FC = () => {
     });
   };
 
+  const { scrollYProgress } = useScroll();
+   const rotateValue = useTransform(
+     scrollYProgress,
+     [0, 1], // Map scroll from 0 to 1
+     [(cards.length - 1) * 6 - 12, 0] // From the initial rotation to 0
+   );
+   console.log(rotateValue);
+   
   return (
-    <div className="flex justify-center items-center h-screen ">
-      <div className="relative -top-2 sm:top-4  md:top-8 mb-12 w-full h-full max-w-3xl max-h-3xl md:max-w-full md:max-h-full">
+    <div className="flex mt-10 md:mt-0 justify-center items-center h-screen ">
+      <div className="relative -top-2 sm:top-4  md:top-20 mb-12 w-full h-full max-w-3xl max-h-3xl md:max-w-full md:max-h-full">
         <AnimatePresence>
           {cards.map((pic, index) => (
             <motion.div
               key={index}
               className="absolute w-full h-full overflow-clip md:overflow-visible "
               style={{
-                rotate: index * 4 - 12,
-                top: index * 20,
-                left: index * 40,
+                rotate: (cards.length - index - 1) * 6 - 12,
+                // rotate: index * 6 - 12,
+                // top: index * 20,
+                transformOrigin: "left bottom",
+                // left: index * 40,
                 zIndex: cards.length - index,
               }}
             >
