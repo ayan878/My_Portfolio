@@ -43,16 +43,16 @@ const Navbar:React.FC = () => {
           <FaGithub className="w-4 h-4 md:w-8 md:h-8 mx-2 md:mx-4 text-white" />
         </a>
         <a
-          href="https://www.linkedin.com/login"
+          href="https://www.linkedin.com/in/ayan878/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Linkedin className="w-4 h-4 md:w-8 md:h-8 mx-2 md:mx-4 text-blue-400" />
         </a>
-        <a href="#">
+        <a href="https://leetcode.com/u/ayan878/">
           <SiLeetcode className="w-4 h-4 md:w-8 md:h-8 mx-2 md:mx-4 text-yellow-400" />
         </a>
-        <a href="https://www.twitter.com">
+        <a href="https://www.hackerrank.com/profile/ayan878">
           <FaHackerrank className="w-4 h-4 md:w-8 md:h-8 mx-2m:;mx-4 text-green-400" />
         </a>
       </div>
