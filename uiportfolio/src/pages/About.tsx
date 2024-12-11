@@ -117,7 +117,7 @@ const AboutMe: React.FC = () => {
             rotate,
             backgroundColor,
             transformStyle: "preserve-3d",
-            transition: "transform 0.2 ease-in-out",
+            // transform: "rotateY(25deg)",
             transformOrigin: "bottom right",
           }}
         >
