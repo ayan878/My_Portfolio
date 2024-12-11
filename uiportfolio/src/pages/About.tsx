@@ -157,7 +157,7 @@ const AboutMe: React.FC = () => {
             agile slick interaction. Aesthetics persona journey map research
             agile aesthetics, agile delight interaction service design.
           </p>
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center lg:justify-start">
             <NeuButton name="www.codeSpace.com" />
           </div>
         </div>
