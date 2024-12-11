@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
         <div className="flex justify-between gap-8">
           <div className="w-full sm:w-1/2 md:w-1.3 lg:w-1/3 mb-6">
             <div className="flex items-center gap-2">
-              <img src={Logo} alt="logo" className="w-16 h-16 hidden md:flex" />
+              <img src={Logo} alt="logo" className="w-16 h-16 hidden lg:flex" />
               <h2 className="text-4xl md:text-3xl font-paytone font-outline-0 text-indigo-600">
                 codeSpace
               </h2>
