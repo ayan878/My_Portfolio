@@ -255,7 +255,7 @@ const ShuffleCard: React.FC = () => {
           {cards.map((pic, index) => (
             <motion.div
               key={index}
-              className="absolute w-full h-full overflow-clip md:overflow-visible "
+              className="absolute w-full md:h-96 lg:h-full overflow-clip md:overflow-visible "
               style={{
                 rotate: (cards.length - index - 1) * 6 - 12,
                 // rotate: index * 6 - 12,
