@@ -250,7 +250,7 @@ const ShuffleCard: React.FC = () => {
    
   return (
     <div className="flex mt-10 md:mt-0 justify-center items-center h-screen ">
-      <div className="relative -top-2 sm:top-4  md:top-20 mb-12 w-full h-full max-w-3xl max-h-3xl md:max-w-full md:max-h-fit border">
+      <div className="relative -top-2 sm:top-4  md:top-20 mb-12 w-full h-full max-w-3xl max-h-3xl md:max-w-full md:max-h-fit">
         <AnimatePresence>
           {cards.map((pic, index) => (
             <motion.div
